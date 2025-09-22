@@ -162,4 +162,4 @@ Dengan memahami konsep Clean Code dan menghindari Bad Code, developer dapat menu
 
 
 ---
-Selanjutnya, kita akan membahas Bab Clean Code berikutnya yaitu: [[Dokumentasi Clean Code - Meaningful Names]]
+Selanjutnya, kita akan membahas Bab Clean Code berikutnya yaitu: [[tutorial/Dokumentasi Clean Code - Meaningful Names]]
