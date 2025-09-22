@@ -61,21 +61,21 @@ Nama harus menjelaskan tujuan dari variabel atau fungsi tersebut.
 
 Contoh:
 
-```
-❌ Bad Example – GetBookByName  
-```
+❌ **Bad Example – GetBookByName**  
+
+![test](img/Picture1.png)
 
 - Id: Seharusnya inputnya adalah Name, karena fungsi ini mencari buku berdasarkan nama, bukan ID. Lalu, nama ini kurang jelas karena tidak menjelaskan bahwa ini adalah ID buku.
-    
 - Record: Nama ini terlalu umum dan tidak menjelaskan bahwa ini adalah data buku.
-    
+
 
 ```
 ✅ Good Example – GetBookById
 ```
 
+![test](img/Picture2.png)
+
 - BookId → Input parameter ini sesuai karena fungsi mencari buku berdasarkan ID, bukan berdasarkan nama.
-    
 - BookRecord → Nama ini lebih deskriptif karena menunjukkan bahwa hasilnya adalah rekaman data buku.  
 
 ### 2. Avoid Disinformation
@@ -88,6 +88,8 @@ Contoh:
 ❌ Bad Example – GetBookAndMemberDetails
 ```
 
+![test](img/Picture2.png)
+
 - Nama fungsi ini menyiratkan bahwa fungsi akan mengambil detail buku dan detail anggota.
 - Namun, berdasarkan hasilnya, fungsi ini hanya mengembalikan BookDetails tanpa informasi tentang anggota.
 - Ini bisa membingungkan bagi developer lain yang menggunakannya, karena mereka mungkin mengira akan mendapatkan informasi tentang anggota juga.
@@ -96,6 +98,8 @@ Contoh:
 ```
 ✅ Good Example – GetBookDetails
 ```
+
+![test](img/Picture4.png)
 
 - Nama ini lebih akurat karena fungsi memang hanya mengembalikan BookDetails.
 - Menghindari disinformasi dan membuat kode lebih mudah dipahami.  
@@ -106,24 +110,25 @@ Gunakan nama yang mudah diucapkan agar mudah didiskusikan dalam tim.
 
 Contoh:
 
+```
 ❌ Bad Example – GtAvlBks, GtBksByAthr
+```
+
+![test](img/Picture5.png)
 
 - Nama ini menggunakan singkatan yang sulit dibaca dan dipahami dengan cepat.
-    
 - Sulit diucapkan dalam diskusi tim, misalnya, "Coba cek fungsi GtAvlBks" bisa membingungkan.
-    
 - Mengurangi keterbacaan kode dan meningkatkan kemungkinan kesalahan pemahaman.
-    
 
+
+```
 ✅ Good Example – GetAvailableBooks, GetBookByAuthor
+```
 
+![test](img/Picture6.png)
 - Nama ini lebih jelas dan mudah dibaca serta diucapkan.
-    
 - Developer lain bisa langsung memahami fungsinya tanpa perlu menebak-nebak.
-    
-- Memudahkan komunikasi dalam tim dan meningkatkan keterbacaan kode.  
-      
-    
+- Memudahkan komunikasi dalam tim dan meningkatkan keterbacaan kode.    
 
 ### 4. Searchable Names
 
@@ -131,7 +136,9 @@ Gunakan nama yang mudah dicari dalam kode agar mempercepat debugging dan pemelih
 
 Contoh:
 
+```
 ❌ Bad Example – Action1, Action2
+```
 
 - Nama ini tidak memberikan informasi jelas tentang fungsi yang dilakukan.
     
@@ -140,7 +147,9 @@ Contoh:
 - Sulit dicari di dalam kode karena terlalu umum dan tidak deskriptif.
     
 
+```
 ✅ Good Example – GetMemberByName, GetMembersData
+```
 
 - Nama ini langsung memberikan informasi tentang apa yang dilakukan fungsinya.
     
@@ -156,7 +165,9 @@ Hindari nama yang lucu atau tidak profesional.
 
 Contoh:
 
+```
 ❌ Bad Example – GetBooksMagic, UpdateMyLittleBookStocks
+```
 
 - Nama ini terlalu imajinatif dan tidak langsung menggambarkan fungsinya.
     
@@ -165,7 +176,9 @@ Contoh:
 - Tidak terdengar profesional dalam lingkungan kerja.
     
 
+```
 ✅ Good Example – GetBooksData, UpdateBookStock
+```
 
 - Nama ini lebih deskriptif dan langsung menyatakan tujuan fungsinya.
     
