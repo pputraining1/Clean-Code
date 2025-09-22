@@ -1,8 +1,10 @@
+**
+
+# Clean Code: Chapter 2 - Meaningful Names
 
 Salah satu aspek terpenting dalam menulis kode yang bersih (Clean Code) adalah penggunaan Meaningful Names atau nama yang bermakna. Nama yang baik akan meningkatkan keterbacaan kode, mempermudah pemeliharaan, dan mengurangi kemungkinan kesalahan akibat ketidakjelasan dalam penamaan variabel, fungsi, atau kelas.
 
 ---
-
 ## Definisi Meaningful Names
 
 Apa itu Meaningful Names?  
@@ -10,22 +12,24 @@ Meaningful Names adalah nama yang jelas, deskriptif, dan mencerminkan tujuan ele
 
 Contoh perbandingan:
 
+```
 ❌ Bad Name: a, b, temp
+```
 
 Pada contoh bad name, nama variabel seperti a, b, dan temp tidak memberikan informasi yang jelas mengenai tujuan atau maknanya. Ini bisa membingungkan bagi orang lain yang membaca kode atau bahkan diri sendiri di masa depan.  
   
+```
 ✅ Good Name: totalPrice, customerName, loanAmount
+```
 
 Pada contoh good name, nama variabel lebih deskriptif dan mencerminkan fungsinya, sehingga kode lebih mudah dibaca dan dipahami.
 
 Dengan menggunakan meaningful names, kode akan lebih mudah dipahami oleh programmer lain, termasuk oleh diri sendiri di masa depan.
 
 ---
-
 ## Pentingnya Meaningful Names
 
 Mengapa Meaningful Names sangat penting dalam pengembangan perangkat lunak? Berikut beberapa alasannya:
-
 ### 1. Mengurangi Ambiguitas
 
 Nama yang tidak jelas dapat membingungkan programmer lain yang membaca kode. Dengan menggunakan nama yang deskriptif, kita bisa menghindari kesalahpahaman dan meningkatkan kejelasan kode.
@@ -47,7 +51,6 @@ Dalam tim pengembangan, penamaan yang baik mempermudah komunikasi antar anggota 
 Kode dengan penamaan yang rapi mencerminkan tingkat profesionalisme seorang developer. Hal ini juga memudahkan onboarding bagi anggota tim baru.
 
 ---
-
 ## Prinsip Meaningful Names
 
 Berikut adalah beberapa prinsip dalam menamai elemen kode dengan meaningful names:
@@ -58,17 +61,22 @@ Nama harus menjelaskan tujuan dari variabel atau fungsi tersebut.
 
 Contoh:
 
+```
 ❌ Bad Example – GetBookByName  
+```
 
 - Id: Seharusnya inputnya adalah Name, karena fungsi ini mencari buku berdasarkan nama, bukan ID. Lalu, nama ini kurang jelas karena tidak menjelaskan bahwa ini adalah ID buku.
+    
 - Record: Nama ini terlalu umum dan tidak menjelaskan bahwa ini adalah data buku.
+    
 
-
+```
 ✅ Good Example – GetBookById
+```
 
 - BookId → Input parameter ini sesuai karena fungsi mencari buku berdasarkan ID, bukan berdasarkan nama.
+    
 - BookRecord → Nama ini lebih deskriptif karena menunjukkan bahwa hasilnya adalah rekaman data buku.  
-  
 
 ### 2. Avoid Disinformation
 
@@ -76,18 +84,21 @@ Jangan menggunakan nama yang bisa menyesatkan atau memberikan informasi yang sal
 
 Contoh:
 
+```
 ❌ Bad Example – GetBookAndMemberDetails
+```
 
 - Nama fungsi ini menyiratkan bahwa fungsi akan mengambil detail buku dan detail anggota.
-- Namun, berdasarkan hasilnya, fungsi ini hanya mengembalikan BookDetails tanpa informas tentang anggota.
+- Namun, berdasarkan hasilnya, fungsi ini hanya mengembalikan BookDetails tanpa informasi tentang anggota.
 - Ini bisa membingungkan bagi developer lain yang menggunakannya, karena mereka mungkin mengira akan mendapatkan informasi tentang anggota juga.
 
 
+```
 ✅ Good Example – GetBookDetails
+```
 
 - Nama ini lebih akurat karena fungsi memang hanya mengembalikan BookDetails.
-- Menghindari disinformasi dan membuat kode lebih mudah dipahami. 
-
+- Menghindari disinformasi dan membuat kode lebih mudah dipahami.  
 
 ### 3. Pronounceable Names
 
@@ -102,7 +113,7 @@ Contoh:
 - Sulit diucapkan dalam diskusi tim, misalnya, "Coba cek fungsi GtAvlBks" bisa membingungkan.
     
 - Mengurangi keterbacaan kode dan meningkatkan kemungkinan kesalahan pemahaman.
-
+    
 
 ✅ Good Example – GetAvailableBooks, GetBookByAuthor
 
@@ -111,6 +122,8 @@ Contoh:
 - Developer lain bisa langsung memahami fungsinya tanpa perlu menebak-nebak.
     
 - Memudahkan komunikasi dalam tim dan meningkatkan keterbacaan kode.  
+      
+    
 
 ### 4. Searchable Names
 
@@ -360,12 +373,7 @@ Noun + Object + Prefix
 
 Meaningful Names adalah dasar dari clean code. Dengan memberikan nama yang jelas dan deskriptif, kita dapat membuat kode yang lebih mudah dibaca, dipelihara, dan dikembangkan. Praktik ini meningkatkan efisiensi tim dan mengurangi kemungkinan error dalam pengembangan perangkat lunak.
 
-***Good code starts with good naming!***
+Good code starts with good naming!
 
-
-![test](img/alert.png)
-
-
-![](alert.png)
   
-![[alert.png]]
+**
