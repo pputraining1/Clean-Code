@@ -21,8 +21,9 @@ Clean code sangat penting dalam pengembangan perangkat lunak karena memberikan b
     
 4. Happier Developers  
     Clean code mengurangi stres dan frustrasi, memungkinkan pengembang bekerja lebih nyaman. Hal ini juga meningkatkan semangat kerja dan kolaborasi dalam tim.
-    
 
+
+---
 ### Prinsip Clean Code
 
 Clean Code adalah kode yang sederhana, mudah dipahami, dan dapat dipelihara dengan baik. Clean Code bukan hanya sekedar membuat kode berjalan dengan benar, tetapi juga memastikan bahwa kode tersebut dapat dibaca, diuji, dan diperbaiki dengan mudah oleh developer lain di masa depan. Dengan menerapkan prinsip Clean Code, pengembangan perangkat lunak menjadi lebih efisien, mengurangi biaya pemeliharaan, serta meningkatkan produktivitas tim.
@@ -60,6 +61,7 @@ Berikut adalah beberapa prinsip utama dalam Clean Code:
     Kesederhanaan adalah inti dari clean code. Jangan tambahkan kompleksitas yang tidak perlu. Fokus pada penyelesaian masalah dengan cara yang paling mudah dimengerti dan diimplementasikan.
     
 
+---
 ### Filosofi Clean Code
 
 Setelah mengetahui pentingnya Clean Code, kita akan menyelami bagaimana filosofi yang terdapat di dalam Clean Code  
@@ -75,8 +77,9 @@ Clean code bukan hanya tentang menulis kode yang berfungsi, tetapi juga tentang 
     
 3. Treat Writing Code as a Craftsman  
     Menulis kode dengan teliti dan penuh perhatian seperti seorang pengrajin, menciptakan solusi yang elegan, efisien, dan mudah dipahami oleh tim pengembang lainnya.
-    
+   
 
+---
 ### Apa Itu Bad Code ?
 
 Bad Code adalah kode yang sulit dibaca, dipelihara, dan memperlambat pengembangan. Beberapa tanda Bad Code (Code Smell) meliputi:
@@ -100,6 +103,7 @@ Bad Code adalah kode yang sulit dibaca, dipelihara, dan memperlambat pengembanga
 
 Dengan memahami konsep Clean Code, developer dapat menulis kode yang lebih baik, lebih mudah dipahami, dan lebih mudah dikelola dalam jangka panjang. 
 
+---
 ### Bahaya Bad Code
 
 Kode yang buruk sering kali muncul karena tekanan waktu, kurangnya perhatian terhadap detail, atau budaya kerja yang tidak mendukung praktik pemrograman yang baik. konsekuensi dari kode yang berantakan:
@@ -113,6 +117,7 @@ Kode yang buruk sering kali muncul karena tekanan waktu, kurangnya perhatian ter
 
 Pada akhirnya, kode yang buruk menyebabkan perusahaan kehilangan banyak waktu dan uang dalam perbaikan dan pengembangan ulang.
 
+---
 ### Jenis Jenis Bad Code
 
 Sebagai seorang pengembang kita harus membuat kode yang dapat dipahami, baik diri sendiri ataupun orang lain. Berikut adalah beberapa bad code yang harus dihindari : 
@@ -159,8 +164,9 @@ Sebagai seorang pengembang kita harus membuat kode yang dapat dipahami, baik dir
     Kode yang terlalu banyak informasi bisa sulit dibaca dan dipahami, karena mengandung lebih banyak detail dari yang diperlukan. Ini bisa terjadi jika ada terlalu banyak komentar, log yang tidak relevan, atau terlalu banyak dependensi yang tidak diperlukan.
     
     ![test](img/Picture8.png)
-    
 
+
+---
 ### Kesimpulan
 
 Clean Code adalah konsep penting dalam pengembangan perangkat lunak yang bertujuan untuk membuat kode yang mudah dipahami, dipelihara, dan diperbaiki. Dengan menerapkan prinsip-prinsip Clean Code seperti keterbacaan, efisiensi, dan keterpeliharaan, developer dapat meningkatkan produktivitas serta mengurangi biaya perawatan jangka panjang.
