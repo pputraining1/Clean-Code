@@ -80,7 +80,7 @@ Clean code bukan hanya tentang menulis kode yang berfungsi, tetapi juga tentang 
    
 
 ---
-### Apa Itu Bad Code ?
+### Apa Itu Bad Code?
 
 Bad Code adalah kode yang sulit dibaca, dipelihara, dan memperlambat pengembangan. Beberapa tanda Bad Code (Code Smell) meliputi:
 
@@ -118,7 +118,7 @@ Kode yang buruk sering kali muncul karena tekanan waktu, kurangnya perhatian ter
 Pada akhirnya, kode yang buruk menyebabkan perusahaan kehilangan banyak waktu dan uang dalam perbaikan dan pengembangan ulang.
 
 ---
-### Jenis Jenis Bad Code
+### Jenis-Jenis Bad Code
 
 Sebagai seorang pengembang kita harus membuat kode yang dapat dipahami, baik diri sendiri ataupun orang lain. Berikut adalah beberapa bad code yang harus dihindari : 
 
