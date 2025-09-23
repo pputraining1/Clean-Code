@@ -191,7 +191,8 @@ Jika memungkinkan, hindari penggunaan switch-case dengan menggantinya menggunaka
 - **Static Entity di OutSystems**
 
 Contoh penerapan menghindari Switch-Case pada OutSystems:
-![test](img/Picture13.png)
+
+![test](img/Picture17.png)
 
 ### Anti-Pattern
 
