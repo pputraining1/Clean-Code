@@ -303,14 +303,13 @@ Gunakan istilah yang sering mencerminkan kebutuhan klien agar lebih mudah dipaha
 ## Konsekuensi Penamaan yang Buruk
 
 Jika kita menggunakan penamaan yang buruk dalam kode, akan ada beberapa konsekuensi negatif:
+###### 1. Membingungkan pengembang lain (atau diri sendiri di masa depan) – Sulit memahami tujuan dari suatu variabel atau fungsi.
 
-1. Membingungkan pengembang lain (atau diri sendiri di masa depan) – Sulit memahami tujuan dari suatu variabel atau fungsi.
+###### 2. Meningkatkan risiko bug karena kesalahpahaman – Misinterpretasi dari kode dapat menyebabkan error yang sulit dideteksi.
 
-2. Meningkatkan risiko bug karena kesalahpahaman – Misinterpretasi dari kode dapat menyebabkan error yang sulit dideteksi.
+###### 3. Memperlambat pengembangan dan debugging – Developer harus menebak-nebak arti dari suatu nama variabel atau fungsi.
 
-3. Memperlambat pengembangan dan debugging – Developer harus menebak-nebak arti dari suatu nama variabel atau fungsi.
-
-4. Menambah biaya pemeliharaan (maintenance) – Butuh waktu lebih lama untuk memperbaiki atau memperbarui kode.
+###### 4. Menambah biaya pemeliharaan (maintenance) – Butuh waktu lebih lama untuk memperbaiki atau memperbarui kode.
 
 
 ---
