@@ -140,7 +140,9 @@ DRY (Don't Repeat Yourself) adalah konsep yang menyarankan untuk tidak mengulang
 Dalam aplikasi pemesanan buku, setiap kali pengguna melakukan pemesanan, sistem harus menghitung total harga berdasarkan jumlah buku yang dipesan dan harga per buku. Jika logika perhitungan ini ditulis berulang kali di beberapa tempat dalam aplikasi, maka akan sulit dikelola ketika ada perubahan, seperti menambahkan pajak atau diskon.
 
 ![test](img/Picture9.png)
+
 Oleh karena itu, sebaiknya memasukan fungsi ke dalam Server Action agar dapat digunakan kembali (reusable). 
+
 
 ![test](img/Picture10.png)
 Jika ada tambahan seperti pajak atau diskon, cukup tambahkan dalam Server Action ini tanpa perlu mengubah banyak bagian aplikasi.
