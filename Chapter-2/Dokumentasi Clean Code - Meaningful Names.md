@@ -1,3 +1,4 @@
+## Intorduction Meaningful Names
 
 Salah satu aspek terpenting dalam menulis kode yang bersih (Clean Code) adalah penggunaan **Meaningful Names** atau nama yang bermakna. Nama yang baik akan meningkatkan keterbacaan kode, mempermudah pemeliharaan, dan mengurangi kemungkinan kesalahan akibat ketidakjelasan dalam penamaan variabel, fungsi, atau kelas.
 
@@ -273,8 +274,7 @@ Gunakan istilah teknis atau konsep yang umum dalam dunia pemrograman.
 ![test](img/Picture18.png)
 - Menggunakan istilah yang sudah dikenal dalam pemrograman seperti Session.
 - SessionUser lebih ringkas dan langsung menggambarkan maksudnya.  
-      
-    
+
 
 ### 10. Using Problem Domain Names
 
