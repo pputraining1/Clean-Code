@@ -1,4 +1,4 @@
-<p style="color: red">test</p>
+<p style="color: red; font-size: 30px; ">test</p>
 ## Introduction To Functions
 
 Dalam pengembangan aplikasi, kualitas kode sangat menentukan keberhasilan jangka panjang dari sebuah sistem. Kode yang tidak rapi dan sulit dipahami akan menyulitkan proses debugging, pemeliharaan, hingga kolaborasi antar developer.
