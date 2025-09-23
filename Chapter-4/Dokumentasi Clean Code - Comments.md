@@ -54,7 +54,7 @@ Komentar dapat ditulis menggunakan // untuk satu baris atau /* */ untuk beberapa
 
 4. **CSS Editor**
 
-    ![test](img/Picture5.png)
+![test](img/Picture5.png)
 
 Menggunakan sintaks /* */, komentar di CSS membantu menjelaskan gaya atau struktur layout, tanpa mempengaruhi hasil tampilan akhir.
 
