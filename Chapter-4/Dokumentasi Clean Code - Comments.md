@@ -49,6 +49,7 @@ Tersedia pada hampir semua elemen dalam OutSystems seperti Actions, Entities, Va
 3. **Expression Editor**
 
 ![test](img/Picture3.png)
+
 Komentar dapat ditulis menggunakan // untuk satu baris atau /* */ untuk beberapa baris, berfungsi untuk memberi catatan di dalam ekspresi logika atau perhitungan, membantu menjelaskan maksud atau fungsi bagian ekspresi tertentu.
 
 4. **CSS Editor**
@@ -199,9 +200,9 @@ Komentar yang tidak perlu karena hanya mengulang isi dari kode:
     
     ![test](img/Picture23.png)
   
-|                                                                                                                                                                                                               |                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
+
 | Catatan: Outsystems secara otomatis mencatat informasi pembuat dan pengubah terakhir suatu elemen, seperti Server Action, Client Action Variabel, Entity, dan Screen, memudahkan pelacakan riwayat perubahan. | ![test](img/Picture16.png) |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- |
 
 ---
 
