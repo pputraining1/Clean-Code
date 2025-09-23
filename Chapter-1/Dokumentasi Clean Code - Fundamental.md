@@ -174,7 +174,3 @@ Clean Code adalah konsep penting dalam pengembangan perangkat lunak yang bertuju
 Sebaliknya, Bad Code dapat memperlambat pengembangan, meningkatkan risiko bug, dan menyulitkan pemeliharaan. Beberapa tanda Bad Code yang harus dihindari meliputi komentar buruk, kode yang dinonaktifkan tetapi masih ada, duplikasi kode, terlalu banyak parameter, dead code, perilaku yang salah, abstraksi yang tidak sesuai, dan informasi yang berlebihan dalam kode.
 
 Dengan memahami konsep Clean Code dan menghindari Bad Code, developer dapat menulis kode yang lebih efisien, mudah dibaca, dan berkontribusi pada pengembangan perangkat lunak yang berkualitas tinggi.
-
-
----
-Selanjutnya, kita akan membahas Bab Clean Code berikutnya yaitu: [[tutorial/Dokumentasi Clean Code - Meaningful Names]]
