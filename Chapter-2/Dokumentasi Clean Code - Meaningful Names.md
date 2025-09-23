@@ -1,16 +1,13 @@
-**
 
-# Clean Code: Chapter 2 - Meaningful Names
-
-Salah satu aspek terpenting dalam menulis kode yang bersih (Clean Code) adalah penggunaan Meaningful Names atau nama yang bermakna. Nama yang baik akan meningkatkan keterbacaan kode, mempermudah pemeliharaan, dan mengurangi kemungkinan kesalahan akibat ketidakjelasan dalam penamaan variabel, fungsi, atau kelas.
+Salah satu aspek terpenting dalam menulis kode yang bersih (Clean Code) adalah penggunaan **Meaningful Names** atau nama yang bermakna. Nama yang baik akan meningkatkan keterbacaan kode, mempermudah pemeliharaan, dan mengurangi kemungkinan kesalahan akibat ketidakjelasan dalam penamaan variabel, fungsi, atau kelas.
 
 ---
 ## Definisi Meaningful Names
 
-Apa itu Meaningful Names?  
+Apa itu **Meaningful Names**?  
 Meaningful Names adalah nama yang jelas, deskriptif, dan mencerminkan tujuan elemen dalam kode. Elemen kode ini dapat berupa variabel, fungsi, metode, kelas, atau modul.
 
-Contoh perbandingan:
+**Contoh perbandingan:**
 
 ```
 ❌ Bad Name: a, b, temp
@@ -24,7 +21,7 @@ Pada contoh bad name, nama variabel seperti a, b, dan temp tidak memberikan info
 
 Pada contoh good name, nama variabel lebih deskriptif dan mencerminkan fungsinya, sehingga kode lebih mudah dibaca dan dipahami.
 
-Dengan menggunakan meaningful names, kode akan lebih mudah dipahami oleh programmer lain, termasuk oleh diri sendiri di masa depan.
+Dengan menggunakan Meaningful Names, kode akan lebih mudah dipahami oleh programmer lain, termasuk oleh diri sendiri di masa depan.
 
 ---
 ## Pentingnya Meaningful Names
@@ -53,20 +50,20 @@ Kode dengan penamaan yang rapi mencerminkan tingkat profesionalisme seorang deve
 ---
 ## Prinsip Meaningful Names
 
-Berikut adalah beberapa prinsip dalam menamai elemen kode dengan meaningful names:
+Berikut adalah beberapa prinsip dalam menamai elemen kode dengan Meaningful Names:
 
 ### 1. Intention-Revealing Names
 
 Nama harus menjelaskan tujuan dari variabel atau fungsi tersebut.
 
-Contoh:
+**Contoh:**
 
 ❌ **Bad Example – GetBookByName**  
 
 ![test](img/Picture1.png)
 
-- Id: Seharusnya inputnya adalah Name, karena fungsi ini mencari buku berdasarkan nama, bukan ID. Lalu, nama ini kurang jelas karena tidak menjelaskan bahwa ini adalah ID buku.
-- Record: Nama ini terlalu umum dan tidak menjelaskan bahwa ini adalah data buku.
+- **Id**: Seharusnya inputnya adalah Name, karena fungsi ini mencari buku berdasarkan nama, bukan ID. Lalu, nama ini kurang jelas karena tidak menjelaskan bahwa ini adalah ID buku.
+- **Record**: Nama ini terlalu umum dan tidak menjelaskan bahwa ini adalah data buku.
 
 
 ```
@@ -75,20 +72,20 @@ Contoh:
 
 ![test](img/Picture2.png)
 
-- BookId → Input parameter ini sesuai karena fungsi mencari buku berdasarkan ID, bukan berdasarkan nama.
-- BookRecord → Nama ini lebih deskriptif karena menunjukkan bahwa hasilnya adalah rekaman data buku.  
+- **BookId** → Input parameter ini sesuai karena fungsi mencari buku berdasarkan ID, bukan berdasarkan nama.
+- **BookRecord** → Nama ini lebih deskriptif karena menunjukkan bahwa hasilnya adalah rekaman data buku.  
 
 ### 2. Avoid Disinformation
 
 Jangan menggunakan nama yang bisa menyesatkan atau memberikan informasi yang salah.
 
-Contoh:
+**Contoh:**
 
 ```
 ❌ Bad Example – GetBookAndMemberDetails
 ```
 
-![test](img/Picture2.png)
+![test](img/Picture3.png)
 
 - Nama fungsi ini menyiratkan bahwa fungsi akan mengambil detail buku dan detail anggota.
 - Namun, berdasarkan hasilnya, fungsi ini hanya mengembalikan BookDetails tanpa informasi tentang anggota.
@@ -108,7 +105,7 @@ Contoh:
 
 Gunakan nama yang mudah diucapkan agar mudah didiskusikan dalam tim.
 
-Contoh:
+**Contoh:**
 
 ```
 ❌ Bad Example – GtAvlBks, GtBksByAthr
@@ -134,148 +131,147 @@ Contoh:
 
 Gunakan nama yang mudah dicari dalam kode agar mempercepat debugging dan pemeliharaan.
 
-Contoh:
+**Contoh:**
 
 ```
 ❌ Bad Example – Action1, Action2
 ```
 
+![test](img/Picture7.png)
 - Nama ini tidak memberikan informasi jelas tentang fungsi yang dilakukan.
-    
 - Developer lain harus membuka implementasi untuk memahami tujuannya.
-    
 - Sulit dicari di dalam kode karena terlalu umum dan tidak deskriptif.
-    
+
 
 ```
 ✅ Good Example – GetMemberByName, GetMembersData
 ```
-
+![test](img/Picture9.png)
 - Nama ini langsung memberikan informasi tentang apa yang dilakukan fungsinya.
-    
 - Mudah dicari dalam kode menggunakan fitur pencarian.
-    
 - Meningkatkan keterbacaan dan memudahkan debugging serta pemeliharaan.  
-      
-    
-
+   
 ### 5. Don’t Be Cute
 
 Hindari nama yang lucu atau tidak profesional.
 
-Contoh:
+**Contoh:**
 
 ```
 ❌ Bad Example – GetBooksMagic, UpdateMyLittleBookStocks
 ```
 
+![test](img/Picture8.png)
 - Nama ini terlalu imajinatif dan tidak langsung menggambarkan fungsinya.
-    
 - Bisa membingungkan developer lain yang membaca kode.
-    
 - Tidak terdengar profesional dalam lingkungan kerja.
-    
+
 
 ```
 ✅ Good Example – GetBooksData, UpdateBookStock
 ```
 
+![test](img/Picture8.png)
 - Nama ini lebih deskriptif dan langsung menyatakan tujuan fungsinya.
-    
 - Mudah dimengerti oleh tim pengembang.
-    
-- Mengikuti standar penamaan yang lebih profesional.  
-      
-    
+- Mengikuti standar penamaan yang lebih profesional.     
+
 
 ### 6. Pick One Word per Concept
 
 Konsisten dalam memilih kata untuk suatu konsep tertentu di seluruh kode.
 
-Contoh:
+**Contoh:**
 
+```
 ❌ Bad Example – AmbilBukuById, GetBooksData, PerbaruiBookStock
+```
 
+![test](img/Picture11.png)
 - Menggunakan campuran bahasa Indonesia dan Inggris (AmbilBukuById dan GetBooksData).
-    
 - Menggunakan kata yang tidak konsisten untuk konsep yang sama (PerbaruiBookStock vs. UpdateBookStock).
-    
 - Bisa membingungkan developer lain karena variasi istilah dalam satu proyek.
-    
 
+
+```
 ✅ Good Example – GetBookById, GetBooksData, UpdateBookStock
+```
 
+![test](img/Picture12.png)
 - Semua istilah dalam bahasa Inggris.
-    
 - Konsisten dalam memilih kata kerja (Get, Update).
-    
 - Memudahkan pembacaan dan pemeliharaan kode dalam tim.  
-      
-    
-
+   
 ### 7. Add Meaningful Context
 
 Tambahkan konteks yang bermakna agar lebih jelas.
 
-Contoh:
+**Contoh:**
 
+```
 ❌ Bad Example – Validate
+```
 
+![test](img/Picture13.png)
 - Terlalu umum, tidak jelas apa yang divalidasi.
-    
 - Membuat kode sulit dipahami tanpa melihat implementasinya.
-    
 
+
+```
 ✅ Good Example – ValidateCustomerOrder
+```
 
+![test](img/Picture14.png)
 - Menambahkan konteks (CustomerOrder), sehingga lebih jelas apa yang divalidasi.
-    
-- Memudahkan pembacaan dan pemeliharaan kode.  
-      
-    
+- Memudahkan pembacaan dan pemeliharaan kode.     
 
 ### 8. Don’t Add Gratuitous Context
 
 Jangan menambahkan konteks yang tidak perlu.
 
-Contoh:
+**Contoh:**
 
+```
 ❌ Bad Example – GetLibrarySystemBookDetailsBasedOnBookId
+```
 
+![test](img/Picture15.png)
 - GetLibrarySystemBookDetailsBasedOnBookId → Terlalu panjang dan berlebihan.
-    
 - InputBookIdentifierForTheLibrarySystem → "ForTheLibrarySystem" tidak perlu.
-    
 - OutputBookInformationDetailsOfTheLibrarySystem → Terlalu deskriptif, bisa disederhanakan.
-    
 
+
+```
 ✅ Good Example – GetBookDetails
+```
 
+![test](img/Picture16.png)
 - GetBookDetails → Langsung ke inti tanpa informasi berlebihan.
-    
 - BookId → Lebih ringkas daripada InputBookIdentifierForTheLibrarySystem.
-    
 - BookDetails → Nama yang sudah cukup jelas tanpa tambahan kata yang tidak perlu.  
-      
-    
+
 
 ### 9. Using Solution Domain Names
 
 Gunakan istilah teknis atau konsep yang umum dalam dunia pemrograman.
 
-Contoh:
+**Contoh:**
 
+```
 ❌ Bad Example – GetUserSementara
+```
 
+![test](img/Picture17.png)
 - Penggunaan istilah "Sementara" kurang jelas dalam konteks teknis.
-    
 - DataPenggunaSementara juga terdengar seperti bahasa sehari-hari, bukan istilah teknis yang sering digunakan.
-    
 
+
+```
 ✅ Good Example – GetSessionUser
+```
 
+![test](img/Picture18.png)
 - Menggunakan istilah yang sudah dikenal dalam pemrograman seperti Session.
-    
 - SessionUser lebih ringkas dan langsung menggambarkan maksudnya.  
       
     
@@ -284,24 +280,26 @@ Contoh:
 
 Gunakan istilah yang sering mencerminkan kebutuhan klien agar lebih mudah dipahami.
 
-Contoh:
+**Contoh:**
 
+```
 ❌ Bad Example – SaveInfo
+```
 
+![test](img/Picture19.png)
 - Terlalu umum dan tidak jelas.
-    
 - "Info" bisa berarti banyak hal, sehingga sulit dipahami konteksnya.
-    
 
+
+```
 ✅ Good Example – SaveTransactionDetails
+```
 
+![test](img/Picture20.png)
 - Lebih spesifik dan menggambarkan apa yang benar-benar disimpan.
-    
 - Memudahkan developer dan stakeholder memahami fungsinya.
-    
 
 ---
-
 ## Konsekuensi Penamaan yang Buruk
 
 Jika kita menggunakan penamaan yang buruk dalam kode, akan ada beberapa konsekuensi negatif:
@@ -313,80 +311,85 @@ Jika kita menggunakan penamaan yang buruk dalam kode, akan ada beberapa konsekue
 3. Memperlambat pengembangan dan debugging – Developer harus menebak-nebak arti dari suatu nama variabel atau fungsi.
     
 4. Menambah biaya pemeliharaan (maintenance) – Butuh waktu lebih lama untuk memperbaiki atau memperbarui kode.
-    
+
 
 ---
 
 ## Panduan Penamaan
 
 Berikut adalah beberapa aturan dasar dalam menamai elemen kode:
-
 ### 1. Terapkan Pascal, Snake, dan Camel Case
 
-- PascalCase: Huruf pertama setiap kata dikapitalisasi (CustomerManager)
+- **PascalCase**: Huruf pertama setiap kata dikapitalisasi (CustomerManager)
     
-- camelCase: Huruf pertama kecil, kata berikutnya dikapitalisasi (getUserData)
+- **camelCase:** Huruf pertama kecil, kata berikutnya dikapitalisasi (getUserData)
     
-- snake_case: Semua huruf kecil, kata dipisahkan dengan underscore (MAX RECORDS)
+- **snake_case**: Semua huruf kecil, kata dipisahkan dengan underscore (MAX RECORDS)
     
 
 ### 2. Gunakan Kata Kerja (Verb) untuk Fungsi
 
 Fungsi (method) harus mencerminkan aksi yang dilakukan, sehingga diawali dengan kata kerja (verb). Format umum:
 
+```
 Verb + Object
 
 Verb + Object + Prefix
+```
 
+**Contoh:**
+```
 ❌ Salah: UsersGet, CustomerSave, Customer_Delete
+```
 
 - Urutan kata kurang tepat. Kata "Users" dan "Customer" adalah kata benda (noun), yang tidak menunjukkan aksi.
-    
 - Fungsi seharusnya diawali dengan kata kerja (verb) seperti "Get", "Save", dan "Delete" agar jelas apa yang dilakukan.
     
-
+```
 ✅ Benar: GetUserData, SaveInvoice, DeleteCustomer
+```
 
 - Urutan kata sudah tepat karena diawali dengan kata kerja (verb), sehingga jelas bahwa fungsi ini melakukan aksi tertentu.
-    
 
 ### 3. Gunakan Kata Benda (Noun) untuk Variabel/Parameter
 
 Variabel menyimpan nilai atau objek, sehingga sebaiknya dinamai dengan kata benda agar lebih deskriptif. Format umum:
 
+```
 Noun + Object
 
 Noun + Object + Prefix
+```
 
+**Contoh:**
+```
 ❌ Salah: Get_userList, listUsers, GetCustomerData
+```
 
-- Get_userList→ Mengandung kata kerja "Get", yang lebih cocok untuk fungsi daripada variabel.
-    
-- listUsers → Urutan kata kurang tepat. Seharusnya "userList", karena variabel ini menyimpan daftar pengguna, bukan aksi untuk menampilkan daftar pengguna.
-    
-- GetCustomerData → Mengandung kata kerja "Get", yang lebih cocok untuk fungsi daripada variabel. Variabel sebaiknya hanya berisi kata benda yang menjelaskan data yang disimpan.
-    
+- **Get_userList**→ Mengandung kata kerja "Get", yang lebih cocok untuk fungsi daripada variabel.
 
+- **listUsers** → Urutan kata kurang tepat. Seharusnya "userList", karena variabel ini menyimpan daftar pengguna, bukan aksi untuk menampilkan daftar pengguna.
+
+- **GetCustomerData** → Mengandung kata kerja "Get", yang lebih cocok untuk fungsi daripada variabel. Variabel sebaiknya hanya berisi kata benda yang menjelaskan data yang disimpan.
+
+
+```
 ✅ Benar: UserData, transactionDetails, customerInfo
+```
 
 - Menggunakan kata benda (noun) yang mendeskripsikan isi variabel dengan lebih jelas.
-    
+
 - "UserData" → Menyimpan data pengguna.
-    
+ 
 - "transactionDetails" → Menyimpan detail transaksi.
-    
+
 - "customerInfo" → Menyimpan informasi pelanggan.
-    
+   
 - Tidak mengandung kata kerja sehingga lebih sesuai sebagai nama variabel.
-    
 
 ---
-
 ## Kesimpulan
 
 Meaningful Names adalah dasar dari clean code. Dengan memberikan nama yang jelas dan deskriptif, kita dapat membuat kode yang lebih mudah dibaca, dipelihara, dan dikembangkan. Praktik ini meningkatkan efisiensi tim dan mengurangi kemungkinan error dalam pengembangan perangkat lunak.
 
-Good code starts with good naming!
-
-  
-**
+> ***Good code starts with good naming!***
