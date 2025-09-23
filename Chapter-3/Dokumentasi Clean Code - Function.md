@@ -64,6 +64,7 @@ Pedoman ukuran Function di OutSystems:
 
 
 **Contoh penerapan Kecil pada OutSystems:**
+
 ![test](img/Picture2.png)
 
 ### 3. Satu Level Abstraksi
