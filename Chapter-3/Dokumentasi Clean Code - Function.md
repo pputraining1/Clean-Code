@@ -5,7 +5,6 @@ Dalam pengembangan aplikasi, kualitas kode sangat menentukan keberhasilan jangka
 Salah satu fondasi utama dari Clean Code adalah penggunaan Function yang baik. Dalam konteks pengembangan aplikasi dengan OutSystems, function direpresentasikan sebagai Actions, baik Server Action maupun Client Action. Meski berbasis low-code, pendekatan terhadap pembuatan function tetap membutuhkan perhatian terhadap struktur, logika, dan penamaan agar aplikasi mudah dibaca, diuji, dan dikembangkan secara berkelanjutan.
 
 ---
-
 ## Apa itu Function?
 
 Dalam pemrograman, **Function** adalah blok kode yang dirancang untuk melakukan tugas tertentu. Function dapat menerima input (parameter), memproses data, dan mengembalikan output. Dengan menerapkan konsep Clean Code, function harus dibuat agar mudah dipahami, digunakan kembali, dan dikelola.
