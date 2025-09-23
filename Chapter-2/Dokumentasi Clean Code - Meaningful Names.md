@@ -177,7 +177,6 @@ Hindari nama yang lucu atau tidak profesional.
 - Mudah dimengerti oleh tim pengembang.
 - Mengikuti standar penamaan yang lebih profesional.     
 
-
 ### 6. Pick One Word per Concept
 
 Konsisten dalam memilih kata untuk suatu konsep tertentu di seluruh kode.
@@ -313,7 +312,6 @@ Jika kita menggunakan penamaan yang buruk dalam kode, akan ada beberapa konsekue
 
 
 ---
-
 ## Panduan Penamaan
 
 Berikut adalah beberapa aturan dasar dalam menamai elemen kode:
