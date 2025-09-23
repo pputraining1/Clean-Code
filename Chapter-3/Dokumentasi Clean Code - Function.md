@@ -1,4 +1,3 @@
-<p style="color: red; font-size: 30px; ">test</p>
 ## Introduction To Functions
 
 Dalam pengembangan aplikasi, kualitas kode sangat menentukan keberhasilan jangka panjang dari sebuah sistem. Kode yang tidak rapi dan sulit dipahami akan menyulitkan proses debugging, pemeliharaan, hingga kolaborasi antar developer.
@@ -18,12 +17,11 @@ Server Action dijalankan di server dan digunakan untuk mengakses database atau m
 Agar function dalam OutSystems tetap rapi dan mudah dikelola, ada beberapa prinsip Clean Code yang perlu diterapkan:
 
 ---
-
 # Good Function
 
 Function yang baik harus memenuhi beberapa kriteria agar dapat dengan mudah dipahami, digunakan kembali, dan dikelola dalam jangka panjang. Berikut adalah beberapa prinsip dalam penulisan Good Function:
 
-## 1. Nama Deskriptif
+### 1. Nama Deskriptif
 
 Nama Function harus secara eksplisit menggambarkan apa yang dilakukan oleh Function tersebut tanpa perlu melihat isi kodenya. Penamaan yang baik membantu pengembang lain memahami maksud dan tujuan dari Function hanya dengan membaca namanya.
 
@@ -53,10 +51,7 @@ Catatan: Penamaan konvensi dapat bervariasi tergantung pada kesepakatan yang tel
 
 ---
 
-  
-  
-
-## 2. Kecil
+### 2. Kecil
 
 Semakin pendek dan sederhana sebuah Function, semakin mudah untuk dibaca dan dipelihara. Idealnya, satu Function hanya berisi beberapa baris kode.
 
@@ -72,8 +67,7 @@ Pedoman ukuran Function di OutSystems:
 Contoh penerapan Kecil pada OutSystems:
 
 ---
-
-## 3. Satu Level Abstraksi
+### 3. Satu Level Abstraksi
 
 Function harus berada pada satu tingkat abstraksi. Jika sebuah Function berada di tingkat abstraksi yang tinggi, maka semua bagiannya harus mengikuti tingkat tersebut, begitu pula jika berada di tingkat abstraksi rendah.
 
@@ -82,8 +76,7 @@ Di OutSystems, abstraksi seringkali berkaitan dengan percabangan dalam alur logi
 Contoh penerapan satu level abstraksi pada OutSystems:
 
 ---
-
-## 4. Tidak Ada Efek Samping
+### 4. Tidak Ada Efek Samping
 
 Function yang baik hanya melakukan satu hal dan tidak memodifikasi keadaan global yang tidak perlu. Di OutSystems, ini berarti:
 
@@ -106,7 +99,7 @@ Argumen yang diberikan kepada Function harus seminimal mungkin. Semakin banyak a
 
 Pada OutSystems, argumen dapat diasosiasikan dengan Input Parameter.
 
-## 1. Jumlah Input Parameter
+### 1. Jumlah Input Parameter
 
 Membatasi jumlah Input Parameter mengurangi kompleksitas dalam memahami logic serta memudahkan testing dan debugging. Sebaiknya Function memiliki sedikit atau bahkan tidak memiliki argumen (niladic function). Jika tidak memungkinkan, usahakan jumlah argumen tidak lebih dari tiga.
 
@@ -114,7 +107,7 @@ Gambar pembatasan jumlah Input Parameter.
 
 ---
 
-## 2. Flags
+### 2. Flags
 
 Hindari penggunaan boolean (true/false) sebagai argumen karena mengindikasikan bahwa Function bisa melakukan dua hal yang berbeda. Lebih baik dipisahkan menjadi dua Function terpisah dengan tujuan yang lebih jelas. 
 
@@ -122,7 +115,7 @@ Contoh penerapan Flags pada OutSystems:
 
 ---
 
-## 3. Object / List
+### 3. Object / List
 
 Jika beberapa Input Parameter memiliki konteks yang sama, sebaiknya dikelompokkan dalam sebuah List. Di OutSystems, hal ini dapat diimplementasikan dengan melakukan Grouping menggunakan Structure untuk mengurangi jumlah Input Parameter yang diteruskan ke Function.
 
@@ -130,20 +123,16 @@ Contoh penerapan Object/List pada OutSystems:
 
 ---
 
-## 4. Penamaan Function dan Argumen
+### 4. Penamaan Function dan Argumen
 
 Nama Function dan argumen harus selaras sehingga lebih mudah dipahami. Jika memungkinkan, masukkan nama argumen ke dalam nama Function untuk memperjelas maksud Function tersebut.
 
 Pada OutSystems, gunakan penamaan yang selaras antara Server Action dan Input Parameter agar lebih mudah dipahami. Nama dari Input Parameter dapat dimasukkan ke dalam nama Server Actions.
 
-  
-  
-
 Contoh Penamaan Function dan Argumen pada OutSystems:
 
 ---
-
-# DRY Function
+## DRY Function
 
 DRY (Don't Repeat Yourself) adalah konsep yang menyarankan untuk tidak mengulang bagian kode yang sama dengan mengekstraknya ke dalam function terpisah.
 
@@ -159,8 +148,7 @@ Oleh karena itu, sebaiknya memasukan fungsi ke dalam Server Action agar dapat di
 Jika ada tambahan seperti pajak atau diskon, cukup tambahkan dalam Server Action ini tanpa perlu mengubah banyak bagian aplikasi.
 
 ---
-
-# Command Query Separation
+## Command Query Separation
 
 Sebuah Function sebaiknya hanya melakukan satu dari dua hal berikut:
 
@@ -181,8 +169,7 @@ Di OutSystems, konsep ini dapat diterapkan dengan memisahkan Server Actions berd
 Contoh penerapan Command dan Query pada OutSystems:
 
 ---
-
-# Exceptions
+## Exceptions
 
 Gunakan sebuah Exceptions dibandingkan menggunakan pesan error bawaan sistem. Ini menjaga aplikasi tetap mudah dipahami dan di-maintain.
 
@@ -197,7 +184,7 @@ Contoh penerapan Exceptions pada OutSystems:
 
 ---
 
-# Switch-Case
+## Switch-Case
 
 Switch-case sering kali melakukan lebih dari satu hal dalam satu logika. Untuk menghindari kompleksitas, isolasikan switch-case ke dalam function khusus yang hanya berisi switch-case.
 
@@ -212,7 +199,7 @@ Contoh penerapan menghindari Switch-Case pada OutSystems:
 
 ---
 
-# Anti-Pattern
+## Anti-Pattern
 
 Anti-pattern adalah pola penulisan kode atau logika yang terlihat seperti solusi yang baik tetapi sebenarnya menciptakan lebih banyak masalah dalam jangka panjang, seperti kode yang sulit dipelihara, sulit diuji, atau tidak efisien.
 
@@ -239,10 +226,9 @@ Contoh Penerapan Step Down Rule:
 
 Implementasi pada OutSystems berdasarkan narasi:
 
-## 
+
 
 ---
-
 ## Kesimpulan
 
 Prinsip Clean Code menekankan bahwa function harus jelas, mudah dipahami dan mudah dikelola. Dalam OutSystems, function direpresentasikan sebagai Actions, yang harus mengikuti prinsip-prinsip Good Functions. Argumen dalam OutSystems diasosiasikan sebagai parameter (input/output) dan harus mengikuti prinsip yang ada. Selain itu, prinsip seperti DRY, exception handling, menghindari switch-case dan anti-pattern, serta penggunaan step-down rule perlu diterapkan agar pengembangan aplikasi lebih terstruktur, mudah dikelola, dan scalable.
