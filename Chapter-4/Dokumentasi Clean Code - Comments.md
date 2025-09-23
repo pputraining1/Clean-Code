@@ -34,7 +34,7 @@ Pada dasarnya, OutSystems mengadopsi berbagai bahasa seperti JavaScript, CSS, HT
 
 1. **Comment Widget**
 
-![test](img/Picture1.png)
+![test](Clean-Code/Chapter-4/img/Picture1.png)
 
 Komentar dalam bentuk widget, digunakan untuk memberi catatan di dalam alur logika (Flow) dalam Client Action atau Server Action. Cocok untuk memberi konteks lokal pada bagian logika yang kompleks atau penting.
 

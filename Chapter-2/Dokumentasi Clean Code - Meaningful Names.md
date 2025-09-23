@@ -61,7 +61,7 @@ Nama harus menjelaskan tujuan dari variabel atau fungsi tersebut.
 
 ❌ **Bad Example – GetBookByName**  
 
-![test](img/Picture1.png)
+![test](Clean-Code/Chapter-2/img/Picture1.png)
 
 - **Id**: Seharusnya inputnya adalah Name, karena fungsi ini mencari buku berdasarkan nama, bukan ID. Lalu, nama ini kurang jelas karena tidak menjelaskan bahwa ini adalah ID buku.
 - **Record**: Nama ini terlalu umum dan tidak menjelaskan bahwa ini adalah data buku.
