@@ -12,7 +12,7 @@ Paradigma pemrograman adalah model atau pendekatan dalam menulis dan mengatur ko
 
 Paradigma pemrograman merupakan pendekatan atau gaya dalam menulis dan menyusun kode dalam bahasa pemrograman. Paradigma ini menentukan bagaimana instruksi diberikan ke komputer, bagaimana struktur program dibuat, dan bagaimana pengembang menyelesaikan suatu masalah menggunakan kode.
 
-![test](Picture1.png)
+![test](img/Picture1.png)
 
 ---
 ## Mengapa Perlu Memahami Paradigma Pemrograman?
@@ -44,7 +44,7 @@ Paradigma pemrograman adalah cara atau pendekatan dalam menulis dan menyusun kod
     
     **Contoh:** Fungsi getArea menerima panjang dan lebar, lalu langsung mengembalikan hasilnya tanpa mengubah apa pun di luar fungsi. Nilai-nilai yang digunakan juga tidak bisa diubah karena ditulis dengan **const**.
 	
-	![test](Picture2.png)
+	![test](img/Picture2.png)
     
     Cara ini membuat kode jadi lebih mudah dibaca, tidak rumit, dan bisa digunakan kembali untuk hitung luas lain.
 
@@ -57,7 +57,7 @@ Paradigma pemrograman adalah cara atau pendekatan dalam menulis dan menyusun kod
     
     Contoh: pada gambar menunjukkan cara deklaratif untuk menghitung luas persegi panjang. Kita cukup membuat fungsi getArea yang menerima panjang dan lebar, lalu mengembalikan hasil perkaliannya. Setelah itu, kita panggil fungsi tersebut dengan memberikan nilai panjang dan lebar yang sudah ditentukan. 
     
-	![test](Picture3.png)
+	![test](img/Picture3.png)
     
     Cara ini disebut deklaratif karena kita hanya menyebutkan apa yang ingin dihitung (luas), tanpa menjelaskan bagaimana langkah-langkah proses perhitungannya secara detail. Kode ini mudah dibaca, ringkas, dan bisa digunakan ulang.
 
@@ -72,13 +72,13 @@ Berikut beberapa paradigma yang digunakan OutSystems:
 1. **Declarative Programming**
     OutSystems menggunakan paradigma deklaratif saat pengembang mendesain antarmuka atau mengatur logika dengan flowchart, karena cukup menyatakan apa yang ingin dicapai, tanpa perlu menuliskan secara detail langkah-langkah teknisnya.
     
-    ![test](Picture4.png)
+    ![test](img/Picture4.png)
 
 
 2. **Event-driven Programming**
     Event-driven programming adalah paradigma pemrograman di mana alur eksekusi program dikendalikan oleh kejadian-kejadian tertentu (event), seperti klik tombol, perubahan input, atau respons dari server. Dalam paradigma ini, program akan merespons suatu event dengan menjalankan aksi atau logika tertentu yang sudah ditentukan.
     
-    ![test](Picture5.png)
+    ![test](img/Picture5.png)
     
     Di OutSystems, paradigma ini diterapkan secara alami melalui fitur-fitur visualnya. Developer dapat mengatur aksi yang dijalankan berdasarkan event pengguna atau sistem dengan menggunakan event handler seperti OnClick, OnChange, atau OnReady di elemen UI.
 
@@ -86,7 +86,7 @@ Berikut beberapa paradigma yang digunakan OutSystems:
 3. **Component-Based Development**
     Component-based programming adalah paradigma pemrograman yang berfokus pada pembuatan, penggunaan ulang, dan penggabungan komponen-komponen independen yang memiliki fungsi spesifik. Komponen ini bisa berupa bagian UI, logic, atau modul aplikasi yang dibungkus agar dapat digunakan kembali di berbagai bagian lain tanpa perlu menulis ulang logika atau desainnya.
     
-    ![test](Picture6.png)
+    ![test](img/Picture6.png)
     
     Dalam OutSystems, paradigma ini sangat menonjol dan diterapkan secara menyeluruh melalui fitur-fitur seperti UI Blocks, Server Actions, Client Actions, dan Modul. Masing-masing bagian ini dirancang agar dapat dikembangkan secara modular dan digunakan ulang (reusable) di halaman atau aplikasi lain.
 
@@ -94,7 +94,7 @@ Berikut beberapa paradigma yang digunakan OutSystems:
 4. **Model-Driven Development**
     Model-Driven Development (MDD) adalah paradigma pemrograman di mana proses pengembangan aplikasi difokuskan pada pembuatan model visual, bukan penulisan kode secara manual. 
     
-    ![test](Picture7.png)
+    ![test](img/Picture7.png)
     
     OutSystems merupakan salah satu platform yang sangat mengandalkan Model-Driven Development. Dengan antarmuka visual yang kuat, pengembang bisa membuat aplikasi dengan cepat hanya dengan menyusun elemen-elemen seperti Entity, Logic Flow, dan UI komponen secara drag and drop, tanpa perlu mengetik banyak baris kode. Setiap komponen yang dibuat secara visual pada dasarnya adalah bagian dari model yang mendeskripsikan bagaimana aplikasi bekerja.
 
@@ -129,7 +129,7 @@ Perbedaan concrete dan abstract sangat penting dalam memahami konsep data abstra
 
 | Aspek    | Concrete                                  | Abstract                                                        |
 | -------- | ----------------------------------------- | --------------------------------------------------------------- |
-| Contoh   | ![test](Picture8.png)                     | ![test](Picture9.png)                                           |
+| Contoh   | ![test](img/Picture8.png)                 | ![test](img/Picture9.png)                                       |
 | Definisi | Bentuk nyata yang bisa langsung digunakan | Gambaran umum atau konsep yang belum diimplementasikan penuh    |
 | Sifat    | Data bersifat tetap dan statis            | Data bersifat dinamis                                           |
 | Tujuan   | Menyediakan Fungsi Spesifik               | Menyediakan struktur dasar yang bisa digunakan oleh banyak tipe |
@@ -139,7 +139,7 @@ Perbedaan concrete dan abstract sangat penting dalam memahami konsep data abstra
 
 Penerapan Data Abstraction pada OutSystems dapat dilihat pada gambar berikut:
 
-![test](Picture10.png)
+![test](img/Picture10.png)
 
 Pada bagian kiri, tampak desain visual dari sebuah Server Action (ModelExample) yang terdiri dari node IF: PostReady dan Server Action: NewPost. Desain ini menyembunyikan kompleksitas logika di balik masing-masing langkah, dan hanya menampilkan alur proses secara umum, inilah bentuk abstraksi secara visual.
 
@@ -156,7 +156,7 @@ Objek dan struktur data memiliki sifat berlawanan dan tidak boleh dicampur semba
 
 Dalam pemrograman high-code seperti Java, C#, atau Python, dikenal konsep Dichotomy of Data & Logic, yaitu pemisahan yang jelas antara data dan logika. Pendekatan ini menekankan bahwa data dan logika adalah dua hal berbeda yang memiliki tanggung jawab masing-masing dalam sistem.
 
-![test](Picture11.png)
+![test](img/Picture11.png)
 
 Data merujuk pada struktur seperti variabel, objek, atau class yang hanya berfungsi untuk menyimpan informasi. Data tidak memiliki perilaku; ia hanya menyimpan nilai seperti nama, harga, atau status. Dalam konteks ini, data bersifat pasif, hanya tersedia untuk digunakan oleh logika.
 
@@ -181,7 +181,7 @@ Pemisahan membuat kode lebih fleksibel dan mudah dikembangkan tanpa perlu mengub
 
 ## Dichotomy pada OutSystems
 
-![test](Picture12.png)
+![test](img/Picture12.png)
 
 OutSystems, sebagai platform low-code, secara eksplisit menerapkan prinsip pemisahan antara data dan logic dalam desain sistemnya. Pendekatan ini selaras dengan praktik terbaik dalam rekayasa perangkat lunak modern yang menekankan modularitas dan pemisahan tanggung jawab. Tab Data berfungsi untuk mendefinisikan struktur data seperti Entity, Static Entity, dan relasi antar data. Semua informasi yang bersifat statis atau dinamis disimpan dan dikelola di sini. Sementara itu, tab Logic digunakan untuk mendefinisikan perilaku aplikasi melalui Client Action, Server Action, dan Integrations.
 
