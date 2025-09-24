@@ -20,8 +20,7 @@ Clean code sangat penting dalam pengembangan perangkat lunak karena memberikan b
       
     
 4. **Happier Developers**  
-    Clean code mengurangi stres dan frustrasi, memungkinkan pengembang bekerja lebih nyaman. Hal ini juga meningkatkan semangat kerja dan kolaborasi dalam tim.
-
+    Clean code mengurangi stres dan frustasi, memungkinkan pengembang bekerja lebih nyaman. Hal ini juga meningkatkan semangat kerja dan kolaborasi dalam tim.
 
 ---
 ### Prinsip Clean Code
@@ -56,11 +55,9 @@ Berikut adalah beberapa prinsip utama dalam Clean Code:
     
 	- **Tested**: Kode harus disertai dengan pengujian, baik itu Unit Tests, Integration Tests, maupun end-to-end Tests, untuk memastikan bahwa kode bekerja sesuai harapan.
     
-
 9. **Simple**  
     Kesederhanaan adalah inti dari clean code. Jangan tambahkan kompleksitas yang tidak perlu. Fokus pada penyelesaian masalah dengan cara yang paling mudah dimengerti dan diimplementasikan.
     
-
 ---
 ### Filosofi Clean Code
 
@@ -100,7 +97,6 @@ Bad Code adalah kode yang sulit dibaca, dipelihara, dan memperlambat pengembanga
     
 8. T**oo Much Information** – Kode mengandung informasi berlebihan yang tidak dibutuhkan.
     
-
 Dengan memahami konsep Clean Code, developer dapat menulis kode yang lebih baik, lebih mudah dipahami, dan lebih mudah dikelola dalam jangka panjang. 
 
 ---
@@ -127,41 +123,41 @@ Sebagai seorang pengembang kita harus membuat kode yang dapat dipahami, baik dir
 	![test](img/Picture1.png)
 	
     
-1. **Commented Out Code**  
+2. **Commented Out Code**  
     Kode yang dinonaktifkan tetapi masih dibiarkan dalam proyek bisa menimbulkan kebingungan dan memperumit pemeliharaan. Developer lain bisa bingung apakah kode tersebut masih dibutuhkan atau tidak. Jika suatu kode memang tidak diperlukan lagi, lebih baik dihapus.
 
       ![test](img/Picture2.png)
 
 
-2. **Duplication**  
+3. **Duplication**  
     Pengulangan kode yang tidak perlu dapat menyulitkan pemahaman logika, memperlambat proses perubahan, dan menurunkan efisiensi serta kinerja perangkat lunak.  
 
 	![test](img/Picture3.png)
       
     
-3. **Too Many Arguments**  
+4. **Too Many Arguments**  
     Pengulangan kode secara tidak perlu bisa menyebabkan kesulitan dalam pemeliharaan. Jika ada perubahan yang perlu dilakukan, maka semua bagian yang duplikat harus diperbarui, yang bisa meningkatkan risiko kesalahan. Lebih baik menggunakan fungsi atau metode untuk menghindari duplikasi kode.  
 
 	![test](img/Picture4.png)
     
-4. **Dead Code**  
+5. **Dead Code**  
     Dead code adalah kode yang tidak pernah dieksekusi atau tidak memiliki dampak apa pun dalam aplikasi. Ini bisa terjadi karena perubahan dalam proyek yang membuat kode tersebut tidak lagi diperlukan. Keberadaan dead code bisa membingungkan dan sebaiknya dihapus.  
       
     ![test](img/Picture5.png)
     
-5. **Incorrect Behavior and Boundaries**  
+6. **Incorrect Behavior and Boundaries**  
     Kode yang tidak menangani semua kemungkinan kasus atau batasan (boundary cases) dengan benar dapat menyebabkan bug atau hasil yang tidak diharapkan. Kesalahan bisa muncul saat kode tidak mempertimbangkan input yang tidak biasa atau skenario ekstrem.
 
   ![test](img/Picture6.png)
 
 	
-6. **Code at Wrong Level of Abstraction**  
+7. **Code at Wrong Level of Abstraction**  
     Jika kode terlalu spesifik pada tingkat abstraksi yang tinggi, atau terlalu umum di tingkat yang rendah, maka akan sulit dipelihara dan dipahami.  
     
 	 ![test](img/Picture7.png)  
       
     
-7. **Too Much Information**  
+8. **Too Much Information**  
     Kode yang terlalu banyak informasi bisa sulit dibaca dan dipahami, karena mengandung lebih banyak detail dari yang diperlukan. Ini bisa terjadi jika ada terlalu banyak komentar, log yang tidak relevan, atau terlalu banyak dependensi yang tidak diperlukan.
     
     ![test](img/Picture8.png)
@@ -172,6 +168,6 @@ Sebagai seorang pengembang kita harus membuat kode yang dapat dipahami, baik dir
 
 Clean Code adalah konsep penting dalam pengembangan perangkat lunak yang bertujuan untuk membuat kode yang mudah dipahami, dipelihara, dan diperbaiki. Dengan menerapkan prinsip-prinsip Clean Code seperti keterbacaan, efisiensi, dan keterpeliharaan, developer dapat meningkatkan produktivitas serta mengurangi biaya perawatan jangka panjang.
 
-Sebaliknya, Bad Code dapat memperlambat pengembangan, meningkatkan risiko bug, dan menyulitkan pemeliharaan. Beberapa tanda Bad Code yang harus dihindari meliputi komentar buruk, kode yang dinonaktifkan tetapi masih ada, duplikasi kode, terlalu banyak parameter, dead code, perilaku yang salah, abstraksi yang tidak sesuai, dan informasi yang berlebihan dalam kode.
+Sebaliknya, **Bad Code** dapat memperlambat pengembangan, meningkatkan risiko bug, dan menyulitkan pemeliharaan. Beberapa tanda **Bad Code** yang harus dihindari meliputi komentar buruk, kode yang dinonaktifkan tetapi masih ada, duplikasi kode, terlalu banyak parameter, dead code, perilaku yang salah, abstraksi yang tidak sesuai, dan informasi yang berlebihan dalam kode.
 
 Dengan memahami konsep Clean Code dan menghindari Bad Code, developer dapat menulis kode yang lebih efisien, mudah dibaca, dan berkontribusi pada pengembangan perangkat lunak yang berkualitas tinggi.
