@@ -25,7 +25,7 @@ Function yang baik harus memenuhi beberapa kriteria agar dapat dengan mudah dipa
 Nama Function harus secara eksplisit menggambarkan apa yang dilakukan oleh Function tersebut tanpa perlu melihat isi kodenya. Penamaan yang baik membantu pengembang lain memahami maksud dan tujuan dari Function hanya dengan membaca namanya.
 
 **Contoh nama deskriptif pada OutSystems:**
-![test](Clean-Code/Chapter-3/img/Picture1.png)
+![test](img/Picture1.png)
 
 ##### Tips dalam menamai Function:
 
