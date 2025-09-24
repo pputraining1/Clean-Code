@@ -124,7 +124,7 @@ Sebagai seorang pengembang kita harus membuat kode yang dapat dipahami, baik dir
 1. **Obsolete, Redundant, and Poorly Written Comments**  
     Komentar dalam kode harus membantu pengembang lain memahami maksud dan fungsi kode. Namun, jika komentar sudah usang (tidak lagi relevan dengan kode yang diperbarui), berlebihan (menjelaskan hal yang sudah jelas dari kode itu sendiri), atau ditulis dengan buruk (tidak jelas atau membingungkan), maka justru akan menghambat pemahaman. 
        
-	![test](Clean-Code/Chapter-1/img/Picture1.png)
+	![test](img/Picture1.png)
 	
     
 1. **Commented Out Code**  
