@@ -1,5 +1,5 @@
 ## Apa itu Clean Code?
-testt
+testtt
 Dalam dunia pemrograman, menulis kode bukan sekadar membuat program berjalan dengan benar, tetapi juga memastikan bahwa kode tersebut mudah dipahami, dipelihara, dan diperbaiki. Pentingnya menulis kode yang bersih, serta dampak dari kode yang buruk dalam siklus hidup pengembangan perangkat lunak.
 
 ---
