@@ -34,7 +34,7 @@ Pada dasarnya, OutSystems mengadopsi berbagai bahasa seperti JavaScript, CSS, HT
 
 1. **Comment Widget**
 
-![test](Clean-Code/Chapter-4/img/Picture1.png)
+![test](img/Picture1.png)
 
 Komentar dalam bentuk widget, digunakan untuk memberi catatan di dalam alur logika (Flow) dalam Client Action atau Server Action. Cocok untuk memberi konteks lokal pada bagian logika yang kompleks atau penting.
 
@@ -50,18 +50,18 @@ Tersedia pada hampir semua elemen dalam OutSystems seperti Actions, Entities, Va
 
 ![test](img/Picture3.png)
 
-Komentar dapat ditulis menggunakan // untuk satu baris atau /* */ untuk beberapa baris, berfungsi untuk memberi catatan di dalam ekspresi logika atau perhitungan, membantu menjelaskan maksud atau fungsi bagian ekspresi tertentu.
+Komentar dapat ditulis menggunakan `/ /` untuk satu baris atau `/*  */` untuk beberapa baris, berfungsi untuk memberi catatan di dalam ekspresi logika atau perhitungan, membantu menjelaskan maksud atau fungsi bagian ekspresi tertentu.
 
 4. **CSS Editor**
 
 ![test](img/Picture5.png)
 
-Menggunakan sintaks /* */, komentar di CSS membantu menjelaskan gaya atau struktur layout, tanpa mempengaruhi hasil tampilan akhir.
+Menggunakan sintaks komentar di CSS membantu menjelaskan gaya atau struktur layout, tanpa mempengaruhi hasil tampilan akhir.
 
 5. **SQL Editor**
 
 ![test](img/Picture4.png)
-Komentar dapat ditulis menggunakan -- untuk satu baris atau /* */ untuk beberapa baris, berguna untuk menjelaskan maksud query, parameter, atau bagian tertentu dari perintah SQL.
+Komentar dapat ditulis menggunakan -- untuk satu baris atau `/*  */` untuk beberapa baris, berguna untuk menjelaskan maksud query, parameter, atau bagian tertentu dari perintah SQL.
 
 ---
 ## Comments Classification
