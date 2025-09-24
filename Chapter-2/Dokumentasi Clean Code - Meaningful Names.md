@@ -63,7 +63,7 @@ Nama harus menjelaskan tujuan dari variabel atau fungsi tersebut.
 
 ![test](Clean-Code/Chapter-2/img/Picture1.png)
 
-- **Id**: Seharusnya inputnya adalah Name, karena fungsi ini mencari buku berdasarkan nama, bukan ID. Lalu, nama ini kurang jelas karena tidak menjelaskan bahwa ini adalah ID buku.
+- **Id**: Seharusnya inputnya adalah **Name**, karena fungsi ini mencari buku berdasarkan nama, bukan ID. Lalu, nama ini kurang jelas karena tidak menjelaskan bahwa ini adalah ID buku.
 - **Record**: Nama ini terlalu umum dan tidak menjelaskan bahwa ini adalah data buku.
 
 
@@ -73,8 +73,9 @@ Nama harus menjelaskan tujuan dari variabel atau fungsi tersebut.
 
 ![test](img/Picture2.png)
 
-- **BookId** → Input parameter ini sesuai karena fungsi mencari buku berdasarkan ID, bukan berdasarkan nama.
+- **BookId** → Input parameter ini sesuai karena fungsi mencari buku berdasarkan **ID**, bukan berdasarkan nama.
 - **BookRecord** → Nama ini lebih deskriptif karena menunjukkan bahwa hasilnya adalah rekaman data buku.  
+
 
 ### 2. Avoid Disinformation
 
@@ -88,8 +89,8 @@ Jangan menggunakan nama yang bisa menyesatkan atau memberikan informasi yang sal
 
 ![test](img/Picture3.png)
 
-- Nama fungsi ini menyiratkan bahwa fungsi akan mengambil detail buku dan detail anggota.
-- Namun, berdasarkan hasilnya, fungsi ini hanya mengembalikan BookDetails tanpa informasi tentang anggota.
+- Nama fungsi ini menyiratkan bahwa fungsi akan mengambil **detail buku dan detail anggota.**
+- Namun, berdasarkan hasilnya, fungsi ini hanya mengembalikan **BookDetails** tanpa informasi tentang anggota.
 - Ini bisa membingungkan bagi developer lain yang menggunakannya, karena mereka mungkin mengira akan mendapatkan informasi tentang anggota juga.
 
 
@@ -99,7 +100,7 @@ Jangan menggunakan nama yang bisa menyesatkan atau memberikan informasi yang sal
 
 ![test](img/Picture4.png)
 
-- Nama ini lebih akurat karena fungsi memang hanya mengembalikan BookDetails.
+- Nama ini lebih akurat karena fungsi memang hanya mengembalikan **BookDetails**.
 - Menghindari disinformasi dan membuat kode lebih mudah dipahami.  
 
 ### 3. Pronounceable Names
@@ -115,7 +116,7 @@ Gunakan nama yang mudah diucapkan agar mudah didiskusikan dalam tim.
 ![test](img/Picture5.png)
 
 - Nama ini menggunakan singkatan yang sulit dibaca dan dipahami dengan cepat.
-- Sulit diucapkan dalam diskusi tim, misalnya, "Coba cek fungsi GtAvlBks" bisa membingungkan.
+- Sulit diucapkan dalam diskusi tim, misalnya, developer mengatakan "Coba cek fungsi **GtAvlBks**", hal ini bisa membingungkan.
 - Mengurangi keterbacaan kode dan meningkatkan kemungkinan kesalahan pemahaman.
 
 
@@ -188,8 +189,8 @@ Konsisten dalam memilih kata untuk suatu konsep tertentu di seluruh kode.
 ```
 
 ![test](img/Picture11.png)
-- Menggunakan campuran bahasa Indonesia dan Inggris (AmbilBukuById dan GetBooksData).
-- Menggunakan kata yang tidak konsisten untuk konsep yang sama (PerbaruiBookStock vs. UpdateBookStock).
+- Menggunakan campuran bahasa Indonesia dan Inggris (**AmbilBukuById** dan **GetBooksData**).
+- Menggunakan kata yang tidak konsisten untuk konsep yang sama (**PerbaruiBookStock** vs. **UpdateBookStock**).
 - Bisa membingungkan developer lain karena variasi istilah dalam satu proyek.
 
 
@@ -199,7 +200,7 @@ Konsisten dalam memilih kata untuk suatu konsep tertentu di seluruh kode.
 
 ![test](img/Picture12.png)
 - Semua istilah dalam bahasa Inggris.
-- Konsisten dalam memilih kata kerja (Get, Update).
+- Konsisten dalam memilih kata kerja (**Get, Update**).
 - Memudahkan pembacaan dan pemeliharaan kode dalam tim.  
    
 ### 7. Add Meaningful Context
@@ -222,7 +223,7 @@ Tambahkan konteks yang bermakna agar lebih jelas.
 ```
 
 ![test](img/Picture14.png)
-- Menambahkan konteks (CustomerOrder), sehingga lebih jelas apa yang divalidasi.
+- Menambahkan konteks (**CustomerOrder**), sehingga lebih jelas apa yang divalidasi.
 - Memudahkan pembacaan dan pemeliharaan kode.     
 
 ### 8. Don’t Add Gratuitous Context
@@ -236,9 +237,9 @@ Jangan menambahkan konteks yang tidak perlu.
 ```
 
 ![test](img/Picture15.png)
-- GetLibrarySystemBookDetailsBasedOnBookId → Terlalu panjang dan berlebihan.
-- InputBookIdentifierForTheLibrarySystem → "ForTheLibrarySystem" tidak perlu.
-- OutputBookInformationDetailsOfTheLibrarySystem → Terlalu deskriptif, bisa disederhanakan.
+- **GetLibrarySystemBookDetailsBasedOnBookId** → Terlalu panjang dan berlebihan.
+- **InputBookIdentifierForTheLibrarySystem** → "ForTheLibrarySystem" tidak perlu.
+- **OutputBookInformationDetailsOfTheLibrarySystem** → Terlalu deskriptif, bisa disederhanakan.
 
 
 ```
@@ -246,9 +247,9 @@ Jangan menambahkan konteks yang tidak perlu.
 ```
 
 ![test](img/Picture16.png)
-- GetBookDetails → Langsung ke inti tanpa informasi berlebihan.
-- BookId → Lebih ringkas daripada InputBookIdentifierForTheLibrarySystem.
-- BookDetails → Nama yang sudah cukup jelas tanpa tambahan kata yang tidak perlu.  
+- **GetBookDetails** → Langsung ke inti tanpa informasi berlebihan.
+- **BookId** → Lebih ringkas daripada **InputBookIdentifierForTheLibrarySystem**.
+- **BookDetails** → Nama yang sudah cukup jelas tanpa tambahan kata yang tidak perlu.  
 
 
 ### 9. Using Solution Domain Names
@@ -262,8 +263,8 @@ Gunakan istilah teknis atau konsep yang umum dalam dunia pemrograman.
 ```
 
 ![test](img/Picture17.png)
-- Penggunaan istilah "Sementara" kurang jelas dalam konteks teknis.
-- DataPenggunaSementara juga terdengar seperti bahasa sehari-hari, bukan istilah teknis yang sering digunakan.
+- Penggunaan istilah "*Sementara*" kurang jelas dalam konteks teknis.
+- **DataPenggunaSementara** juga terdengar seperti bahasa sehari-hari, bukan istilah teknis yang sering digunakan.
 
 
 ```
@@ -272,7 +273,7 @@ Gunakan istilah teknis atau konsep yang umum dalam dunia pemrograman.
 
 ![test](img/Picture18.png)
 - Menggunakan istilah yang sudah dikenal dalam pemrograman seperti Session.
-- SessionUser lebih ringkas dan langsung menggambarkan maksudnya.  
+- **SessionUser** lebih ringkas dan langsung menggambarkan maksudnya.  
 
 
 ### 10. Using Problem Domain Names
@@ -317,11 +318,11 @@ Jika kita menggunakan penamaan yang buruk dalam kode, akan ada beberapa konsekue
 Berikut adalah beberapa aturan dasar dalam menamai elemen kode:
 ### 1. Terapkan Pascal, Snake, dan Camel Case
 
-- **PascalCase**: Huruf pertama setiap kata dikapitalisasi (CustomerManager)
+- **PascalCase**: Huruf pertama setiap kata dikapitalisasi (**CustomerManager**)
     
-- **camelCase:** Huruf pertama kecil, kata berikutnya dikapitalisasi (getUserData)
+- **camelCase:** Huruf pertama kecil, kata berikutnya dikapitalisasi (**getUserData**)
     
-- **snake_case**: Semua huruf kecil, kata dipisahkan dengan underscore (MAX RECORDS)
+- **snake_case**: Semua huruf kecil, kata dipisahkan dengan underscore (**MAX RECORDS**)
     
 
 ### 2. Gunakan Kata Kerja (Verb) untuk Fungsi
@@ -339,14 +340,14 @@ Verb + Object + Prefix
 ❌ Salah: UsersGet, CustomerSave, Customer_Delete
 ```
 
-- Urutan kata kurang tepat. Kata "Users" dan "Customer" adalah kata benda (noun), yang tidak menunjukkan aksi.
-- Fungsi seharusnya diawali dengan kata kerja (verb) seperti "Get", "Save", dan "Delete" agar jelas apa yang dilakukan.
+- Urutan kata kurang tepat. Kata "**Users**" dan "**Customer**" adalah **kata benda (noun)**, yang tidak menunjukkan aksi.
+- Fungsi seharusnya diawali dengan **kata kerja (verb)** seperti "**Get**", "**Save**", dan "**Delete**" agar jelas apa yang dilakukan.
     
 ```
 ✅ Benar: GetUserData, SaveInvoice, DeleteCustomer
 ```
 
-- Urutan kata sudah tepat karena diawali dengan kata kerja (verb), sehingga jelas bahwa fungsi ini melakukan aksi tertentu.
+- Urutan kata sudah tepat karena diawali dengan **kata kerja (verb)**, sehingga jelas bahwa fungsi ini melakukan aksi tertentu.
 
 ### 3. Gunakan Kata Benda (Noun) untuk Variabel/Parameter
 
@@ -363,11 +364,11 @@ Noun + Object + Prefix
 ❌ Salah: Get_userList, listUsers, GetCustomerData
 ```
 
-- **Get_userList**→ Mengandung kata kerja "Get", yang lebih cocok untuk fungsi daripada variabel.
+- **Get_userList**→ Mengandung kata kerja "**Get**", yang lebih cocok untuk fungsi daripada variabel.
 
-- **listUsers** → Urutan kata kurang tepat. Seharusnya "userList", karena variabel ini menyimpan daftar pengguna, bukan aksi untuk menampilkan daftar pengguna.
+- **listUsers** → Urutan kata kurang tepat. Seharusnya "**userList**", karena variabel ini menyimpan daftar pengguna, bukan aksi untuk menampilkan daftar pengguna.
 
-- **GetCustomerData** → Mengandung kata kerja "Get", yang lebih cocok untuk fungsi daripada variabel. Variabel sebaiknya hanya berisi kata benda yang menjelaskan data yang disimpan.
+- **GetCustomerData** → Mengandung kata kerja "**Get**", yang lebih cocok untuk fungsi daripada variabel. Variabel sebaiknya hanya berisi kata benda yang menjelaskan data yang disimpan.
 
 
 ```
@@ -376,11 +377,11 @@ Noun + Object + Prefix
 
 - Menggunakan kata benda (noun) yang mendeskripsikan isi variabel dengan lebih jelas.
 
-- "UserData" → Menyimpan data pengguna.
+- "**UserData**" → Menyimpan data pengguna.
  
-- "transactionDetails" → Menyimpan detail transaksi.
+- "**transactionDetails**" → Menyimpan detail transaksi.
 
-- "customerInfo" → Menyimpan informasi pelanggan.
+- "**customerInfo**" → Menyimpan informasi pelanggan.
    
 - Tidak mengandung kata kerja sehingga lebih sesuai sebagai nama variabel.
 
