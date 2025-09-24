@@ -5,7 +5,7 @@ Salah satu aspek terpenting dalam menulis kode yang bersih (Clean Code) adalah p
 ---
 ## Definisi Meaningful Names
 
-Apa itu **Meaningful Names**?  
+**Apa itu Meaningful Names?**  
 Meaningful Names adalah nama yang jelas, deskriptif, dan mencerminkan tujuan elemen dalam kode. Elemen kode ini dapat berupa variabel, fungsi, metode, kelas, atau modul.
 
 **Contoh perbandingan:**
@@ -14,13 +14,13 @@ Meaningful Names adalah nama yang jelas, deskriptif, dan mencerminkan tujuan ele
 ❌ Bad Name: a, b, temp
 ```
 
-Pada contoh bad name, nama variabel seperti a, b, dan temp tidak memberikan informasi yang jelas mengenai tujuan atau maknanya. Ini bisa membingungkan bagi orang lain yang membaca kode atau bahkan diri sendiri di masa depan.  
+Pada contoh Bad Name diatas, nama variabel seperti a, b, dan temp tidak memberikan informasi yang jelas mengenai tujuan atau maknanya. Ini bisa membingungkan bagi orang lain yang membaca kode atau bahkan diri sendiri di masa depan.  
   
 ```
 ✅ Good Name: totalPrice, customerName, loanAmount
 ```
 
-Pada contoh good name, nama variabel lebih deskriptif dan mencerminkan fungsinya, sehingga kode lebih mudah dibaca dan dipahami.
+Pada contoh Good Name diatas, nama variabel lebih deskriptif dan mencerminkan fungsinya, sehingga kode lebih mudah dibaca dan dipahami.
 
 Dengan menggunakan Meaningful Names, kode akan lebih mudah dipahami oleh programmer lain, termasuk oleh diri sendiri di masa depan.
 
@@ -28,23 +28,23 @@ Dengan menggunakan Meaningful Names, kode akan lebih mudah dipahami oleh program
 ## Pentingnya Meaningful Names
 
 Mengapa Meaningful Names sangat penting dalam pengembangan perangkat lunak? Berikut beberapa alasannya:
-### 1. Mengurangi Ambiguitas
+#### 1. Mengurangi Ambiguitas
 
 Nama yang tidak jelas dapat membingungkan programmer lain yang membaca kode. Dengan menggunakan nama yang deskriptif, kita bisa menghindari kesalahpahaman dan meningkatkan kejelasan kode.
 
-### 2. Meningkatkan Keterbacaan (Readability)
+#### 2. Meningkatkan Keterbacaan (Readability)
 
 Kode yang mudah dibaca akan lebih mudah dipahami. Ini akan mempercepat proses pengembangan dan debugging.
 
-### 3. Memudahkan Pemeliharaan (Maintenance)
+#### 3. Memudahkan Pemeliharaan (Maintenance)
 
 Kode yang memiliki penamaan yang jelas akan lebih mudah diperbaiki atau diperbarui di masa mendatang, terutama jika dikerjakan oleh tim yang berbeda.
 
-### 4. Mempercepat Kolaborasi (Collaborate)
+#### 4. Mempercepat Kolaborasi (Collaborate)
 
 Dalam tim pengembangan, penamaan yang baik mempermudah komunikasi antar anggota tim dan mempercepat proses kerja.
 
-### 5. Mencerminkan Profesionalisme
+#### 5. Mencerminkan Profesionalisme
 
 Kode dengan penamaan yang rapi mencerminkan tingkat profesionalisme seorang developer. Hal ini juga memudahkan onboarding bagi anggota tim baru.
 
