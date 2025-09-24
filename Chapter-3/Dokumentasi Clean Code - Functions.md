@@ -1,8 +1,8 @@
-## Introduction To Functions
+## Introduction
 
 Dalam pengembangan aplikasi, kualitas kode sangat menentukan keberhasilan jangka panjang dari sebuah sistem. Kode yang tidak rapi dan sulit dipahami akan menyulitkan proses debugging, pemeliharaan, hingga kolaborasi antar developer.
 
-Salah satu fondasi utama dari Clean Code adalah penggunaan Function yang baik. Dalam konteks pengembangan aplikasi dengan OutSystems, function direpresentasikan sebagai Actions, baik Server Action maupun Client Action. Meski berbasis low-code, pendekatan terhadap pembuatan function tetap membutuhkan perhatian terhadap struktur, logika, dan penamaan agar aplikasi mudah dibaca, diuji, dan dikembangkan secara berkelanjutan.
+Salah satu fondasi utama dari Clean Code adalah **penggunaan Function yang baik**. Dalam konteks pengembangan aplikasi dengan OutSystems, function direpresentasikan sebagai Actions, baik Server Action maupun Client Action. Meski berbasis low-code, pendekatan terhadap pembuatan function tetap membutuhkan perhatian terhadap struktur, logika, dan penamaan agar aplikasi mudah dibaca, diuji, dan dikembangkan secara berkelanjutan.
 
 ---
 ## Apa itu Function?
@@ -11,7 +11,7 @@ Dalam pemrograman, **Function** adalah blok kode yang dirancang untuk melakukan 
 
 Di OutSystems, **Function** direpresentasikan sebagai **Actions**, yang dapat berupa Server Action atau Client Action. 
 
-Server Action dijalankan di server dan digunakan untuk mengakses database atau memproses data dalam skala besar, sedangkan Client Action dijalankan di sisi pengguna untuk manipulasi antarmuka atau pengolahan data ringan.
+**Server Action** dijalankan di server dan digunakan untuk mengakses database atau memproses data dalam skala besar, sedangkan **Client Action** dijalankan di sisi pengguna untuk manipulasi antarmuka atau pengolahan data ringan.
 
 Agar function dalam OutSystems tetap rapi dan mudah dikelola, ada beberapa prinsip Clean Code yang perlu diterapkan:
 
@@ -30,20 +30,15 @@ Nama Function harus secara eksplisit menggambarkan apa yang dilakukan oleh Funct
 ##### Tips dalam menamai Function:
 
 - Gunakan kata kerja yang jelas dan spesifik.
-
 - Menyertakan Entitas yang diproses.
-   
 - Hindari singkatan yang membingungkan.
-
 - Konsisten dalam mengikuti konvensi penamaan.
 
 ##### Contoh Konvensi penamaan di OutSystems:
 
 - Diawali dengan nama entitas yang relevan.
-
-- Menggunakan format Pascal Snake Case dengan pemisah underscore (_).
-
-- Contoh: Order_ProcessPayment, User_ValidateLogin.
+- Menggunakan format Pascal Snake Case dengan pemisah underscore ( _ ).
+- Contoh: **Order_ProcessPayment**, **User_ValidateLogin**.
 
 > Catatan: Penamaan konvensi dapat bervariasi tergantung pada kesepakatan yang telah disepakati bersama dalam tim atau organisasi.
 
@@ -53,12 +48,10 @@ Nama Function harus secara eksplisit menggambarkan apa yang dilakukan oleh Funct
 
 Semakin pendek dan sederhana sebuah Function, semakin mudah untuk dibaca dan dipelihara. Idealnya, satu Function hanya berisi beberapa baris kode.
 
-Pedoman ukuran Function di OutSystems:
+**Pedoman ukuran Function di OutSystems:**
 
-- Jumlah widget di dalam Action tidak melebihi 15, sebaiknya di bawah 10.
-
-- Semua widget dalam satu Action sebaiknya terlihat dalam satu layar tanpa perlu scroll atau zoom out.
-
+- Jumlah widget di dalam *Action* tidak melebihi 15, sebaiknya di bawah 10.
+- Semua widget dalam satu *Action* sebaiknya terlihat dalam satu layar tanpa perlu *scroll* atau *zoom out*.
 - Jarak antar widget harus konsisten agar lebih mudah dibaca.
 
 
@@ -79,14 +72,14 @@ Di OutSystems, abstraksi seringkali berkaitan dengan percabangan dalam alur logi
 
 Function yang baik hanya melakukan satu hal dan tidak memodifikasi keadaan global yang tidak perlu. Di OutSystems, ini berarti:
 
-- Action hanya fokus mengolah data berdasarkan Input Parameter dan menghasilkan Output Parameter tanpa mengubah variabel global atau langsung memodifikasi database.
+- *Action* hanya fokus mengolah data berdasarkan *Input Parameter* dan menghasilkan *Output Parameter* tanpa mengubah variabel global atau langsung memodifikasi database.
 
 - Hindari perubahan nilai variabel di luar ruang lingkup Function.   
 
 **Contoh penerapan Tidak Ada Efek Samping pada OutSystems:**
 ![test](img/Picture4.png)
 
-Server Action hanya mengolah data berdasarkan Input Parameter dan menghasilkan Output Parameter, tanpa memodifikasi variabel global atau database.
+Server Action hanya mengolah data berdasarkan **Input Parameter** dan menghasilkan **Output Parameter**, tanpa memodifikasi variabel global atau database.
 
 ---
 # Arguments Function
@@ -97,7 +90,7 @@ Pada OutSystems, argumen dapat diasosiasikan dengan **Input Parameter**.
 
 ### 1. Jumlah Input Parameter
 
-Membatasi jumlah Input Parameter mengurangi kompleksitas dalam memahami logic serta memudahkan testing dan debugging. Sebaiknya Function memiliki sedikit atau bahkan tidak memiliki argumen (niladic function). Jika tidak memungkinkan, usahakan jumlah argumen tidak lebih dari tiga.
+Membatasi jumlah Input Parameter mengurangi kompleksitas dalam memahami logic serta memudahkan testing dan debugging. Sebaiknya Function memiliki sedikit atau bahkan tidak memiliki argumen (*niladic function*). Jika tidak memungkinkan, usahakan jumlah argumen tidak lebih dari tiga.
 
 **Gambar pembatasan jumlah Input Parameter:**
 
@@ -129,14 +122,13 @@ Pada OutSystems, gunakan penamaan yang selaras antara Server Action dan Input Pa
 
 ### DRY Function
 
-DRY (Don't Repeat Yourself) adalah konsep yang menyarankan untuk tidak mengulang bagian kode yang sama dengan mengekstraknya ke dalam function terpisah.
+**DRY (Don't Repeat Yourself)** adalah konsep yang menyarankan untuk tidak mengulang bagian kode yang sama dengan mengekstraknya ke dalam function terpisah.
 
-- Server Action dapat digunakan untuk menampung logika yang sering digunakan dalam aplikasi.
-    
+- **Server Action dapat digunakan untuk menampung logika yang sering digunakan dalam aplikasi.**
 
 **Contoh penerapan DRY Function pada OutSystems:**
 
-Dalam aplikasi pemesanan buku, setiap kali pengguna melakukan pemesanan, sistem harus menghitung total harga berdasarkan jumlah buku yang dipesan dan harga per buku. Jika logika perhitungan ini ditulis berulang kali di beberapa tempat dalam aplikasi, maka akan sulit dikelola ketika ada perubahan, seperti menambahkan pajak atau diskon.
+Dalam aplikasi pemesanan buku, setiap kali pengguna melakukan pemesanan, sistem harus menghitung **total harga** berdasarkan jumlah buku yang dipesan dan harga per buku. Jika logika perhitungan ini ditulis berulang kali di beberapa tempat dalam aplikasi, maka akan sulit dikelola ketika ada perubahan, seperti menambahkan pajak atau diskon.
 
 ![test](img/Picture9.png)
 
@@ -151,17 +143,17 @@ Jika ada tambahan seperti pajak atau diskon, cukup tambahkan dalam Server Action
 
 Sebuah Function sebaiknya hanya melakukan satu dari dua hal berikut:
 
-1. Command: Mengubah keadaan suatu objek.
-2. Query: Mengembalikan informasi tentang objek tersebut.
+1. **Command**: Mengubah keadaan suatu objek.
+2. **Query**: Mengembalikan informasi tentang objek tersebut.
 
 
 Di OutSystems, konsep ini dapat diterapkan dengan memisahkan Server Actions berdasarkan Functionnya, misalnya:
 
-- Commands: Order_Create, User_UpdatePassword
-- Queries: Order_GetById, User_GetDetails
+- **Commands**: Order_Create, User_UpdatePassword
+- **Queries**: Order_GetById, User_GetDetails
 
 
-Contoh penerapan Command dan Query pada OutSystems:
+**Contoh penerapan Command dan Query pada OutSystems:**
 
 ![test](img/Picture11.png)
 
@@ -172,22 +164,23 @@ Gunakan sebuah Exceptions dibandingkan menggunakan pesan error bawaan sistem. In
 
 **Best Practices untuk Exceptions:**
 
-- Gunakan Raise Exception untuk menangkap dan melaporkan error secara eksplisit.
-- Gunakan Exception Handler untuk menangani error di level tertinggi aplikasi.
+- Gunakan *Raise Exception* untuk menangkap dan melaporkan error secara eksplisit.
+- Gunakan *Exception Handler* untuk menangani error di level tertinggi aplikasi.
 
 
 **Contoh penerapan Exceptions pada OutSystems:**
 
 ![test](img/Picture12.png)
 
+---
 ### Switch-Case
 
-Switch-case sering kali melakukan lebih dari satu hal dalam satu logika. Untuk menghindari kompleksitas, isolasikan switch-case ke dalam function khusus yang hanya berisi switch-case.
+Switch-case sering kali melakukan lebih dari satu hal dalam satu logika. Untuk menghindari kompleksitas, isolasikan *switch-case* ke dalam function khusus yang hanya berisi *switch-case*.
 
-Jika memungkinkan, hindari penggunaan switch-case dengan menggantinya menggunakan:
+Jika memungkinkan, hindari penggunaan *switch-case* dengan menggantinya menggunakan:
 
 - **IF Condition**
-- **Static Entity di OutSystems**
+- **Static Entity** di OutSystems
 
 Contoh penerapan menghindari Switch-Case pada OutSystems:
 
@@ -201,20 +194,20 @@ Contoh penerapan Anti-Pattern pada OutSystems:
 
 ![test](img/Picture14.png)
 
-Pada Gambar, Terdapat contoh buruk yaitu pemanggilan beberapa Server Action secara langsung di dalam Screen Action untuk membuat transaksi. Pemanggilan banyak Server Action dalam satu Screen Action dapat menyebabkan penurunan performa karena setiap pemanggilan akan mengakses server secara terpisah. Jika jumlah data besar, misalnya 1000 transaksi, hal ini dapat meningkatkan risiko timeout karena server harus menangani banyak permintaan secara berulang.
+Pada Gambar, Terdapat contoh buruk yaitu **pemanggilan beberapa Server Action** secara langsung di dalam **Screen Action** untuk membuat transaksi. Pemanggilan banyak Server Action dalam satu Screen Action dapat menyebabkan penurunan performa karena setiap pemanggilan akan mengakses server secara terpisah. Jika jumlah data besar, misalnya 1000 transaksi, hal ini dapat meningkatkan risiko timeout karena server harus menangani banyak permintaan secara berulang.
 
-Solusi yang lebih baik adalah membungkus seluruh logika dalam satu Server Action yang menangani semua proses sekaligus, kemudian memanggil hanya satu Server Action dari Screen Action. Dengan cara ini, jumlah komunikasi dengan server berkurang, sehingga meningkatkan efisiensi dan menghindari masalah performa.
+Solusi yang lebih baik adalah **membungkus seluruh logika dalam satu Server Action** yang menangani semua proses sekaligus, kemudian memanggil **hanya satu Server Action dari Screen Action**. Dengan cara ini, jumlah komunikasi dengan server berkurang, sehingga meningkatkan efisiensi dan menghindari masalah performa.
 
 ---
 # Step Down Rule
 
 Menarasikan Function dari atas ke bawah seperti sebuah cerita membantu dalam memahami alur kode dengan lebih baik. Function dengan level abstraksi yang tinggi ditempatkan di atas, sedangkan detail implementasinya ditempatkan di bagian bawah.
   
-Contoh Penerapan Step Down Rule:
+**Contoh Penerapan Step Down Rule:**
 
 ![test](img/Picture15.png)
 
-Implementasi pada OutSystems berdasarkan narasi:
+**Implementasi pada OutSystems berdasarkan narasi:**
 
 ![test](img/Picture16.png)
 
