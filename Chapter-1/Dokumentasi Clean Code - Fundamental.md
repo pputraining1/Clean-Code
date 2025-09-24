@@ -108,12 +108,11 @@ Dengan memahami konsep Clean Code, developer dapat menulis kode yang lebih baik,
 
 Kode yang buruk sering kali muncul karena tekanan waktu, kurangnya perhatian terhadap detail, atau budaya kerja yang tidak mendukung praktik pemrograman yang baik. konsekuensi dari kode yang berantakan:
 
-1. Produktivitas Menurun: Seiring waktu, kode yang berantakan menjadi semakin sulit dipahami, menyebabkan pengembang harus menghabiskan waktu lebih lama untuk memahami dan memodifikasinya.  
+1. **Produktivitas Menurun:** Seiring waktu, kode yang berantakan menjadi semakin sulit dipahami, menyebabkan pengembang harus menghabiskan waktu lebih lama untuk memahami dan memodifikasinya.  
     
-2. Bug dan Masalah Tak Terduga: Kode yang tidak terstruktur cenderung memiliki lebih banyak bug karena ketidakkonsistenan dan kurangnya pemahaman yang jelas tentang bagaimana sistem bekerja.  
+2. **Bug dan Masalah Tak Terduga**:** Kode yang tidak terstruktur cenderung memiliki lebih banyak bug karena ketidakkonsistenan dan kurangnya pemahaman yang jelas tentang bagaimana sistem bekerja.  
       
-3. Ketergantungan yang Kompleks: Kode yang buruk sering kali memiliki banyak dependensi yang sulit diurai, membuat perubahan kecil pun berisiko menyebabkan kegagalan besar.
-    
+3. **Ketergantungan yang Kompleks:** Kode yang buruk sering kali memiliki banyak dependensi yang sulit diurai, membuat perubahan kecil pun berisiko menyebabkan kegagalan besar.
 
 Pada akhirnya, kode yang buruk menyebabkan perusahaan kehilangan banyak waktu dan uang dalam perbaikan dan pengembangan ulang.
 
