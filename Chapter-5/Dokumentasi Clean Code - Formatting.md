@@ -1,6 +1,6 @@
 # Introduction
 
-Formatting adalah proses pengaturan tata letak dan penyajian kode agar lebih mudah dibaca dan dipahami. Formatting mencakup berbagai aspek, seperti:
+Formatting adalah proses pengaturan tata letak dan penyajian kode agar **lebih** **mudah dibaca** dan **dipahami**. Formatting mencakup berbagai aspek, seperti:
 
 - Indentasi (penggunaan spasi atau tab untuk menunjukkan hierarki struktur kode).
     
