@@ -1,4 +1,4 @@
-## Intorduction Meaningful Names
+## Intorduction
 
 Salah satu aspek terpenting dalam menulis kode yang bersih (Clean Code) adalah penggunaan **Meaningful Names** atau nama yang bermakna. Nama yang baik akan meningkatkan keterbacaan kode, mempermudah pemeliharaan, dan mengurangi kemungkinan kesalahan akibat ketidakjelasan dalam penamaan variabel, fungsi, atau kelas.
 
