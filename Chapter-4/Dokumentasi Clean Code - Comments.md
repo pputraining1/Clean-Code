@@ -92,10 +92,6 @@ Tipe-tipe komentar pada klasifikasi “**Better Comments**”:
 
 Mengacu pada Alignment Chart, penulis Clean Code yaitu Robert C. Martin, mengklasifikasikan komentar sebagai bagian dari spektrum moral yang dikenal dengan istilah **“Lawful Evil”**.
 
-<div style="text-align: center;">  
-![test](img/Picture8.png)  
-</div>
-
 
 ![test](img/Picture8.png)
 
