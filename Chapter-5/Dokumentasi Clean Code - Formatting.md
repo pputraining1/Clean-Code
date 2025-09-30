@@ -2,74 +2,54 @@
 
 Formatting adalah proses pengaturan tata letak dan penyajian kode agar **lebih** **mudah dibaca** dan **dipahami**. Formatting mencakup berbagai aspek, seperti:
 
-- Indentasi (penggunaan spasi atau tab untuk menunjukkan hierarki struktur kode).
-    
-- Spasi antar elemen kode untuk meningkatkan keterbacaan.
-    
-- Pemisahan baris kode untuk memisahkan bagian-bagian kode yang memiliki fungsi berbeda.
-    
-- Struktur keseluruhan kode agar lebih mudah dinavigasi oleh pengembang.
-    
+- **Indentasi** (penggunaan spasi atau tab untuk menunjukkan hierarki struktur kode).
+- **Spasi antar elemen kode** untuk meningkatkan keterbacaan.
+- **Pemisahan baris kode** untuk memisahkan bagian-bagian kode yang memiliki fungsi berbeda.
+- **Struktur keseluruhan kode** agar lebih mudah dinavigasi oleh pengembang.
 
 ---
-
 ## Tujuan Formatting
 
 Formatting bukan sekadar membuat kode terlihat rapi, tetapi juga memiliki tujuan yang lebih luas dalam pengembangan perangkat lunak, yaitu:
 
-1. Meningkatkan keterbacaan kode
+1. **Meningkatkan keterbacaan kode**
+	- Kode lebih sering dibaca daripada ditulis, sehingga tampilan yang terstruktur mempermudah pemahaman.
+
+2. **Mempermudah pemeliharaan kode**
+    - Pengembang lain dapat dengan cepat memahami dan memodifikasi kode tanpa resiko besar.
+
+3. **Meningkatkan efisiensi kolaborasi**
+    - Dengan mengikuti standar formatting yang sama, pengembang dapat bekerja bersama tanpa hambatan pemahaman.
+
+4. **Mengurangi kesalahan dalam kode**
+    - Struktur yang rapi membantu dalam mendeteksi bug lebih cepat.
     
 
-- Kode lebih sering dibaca daripada ditulis, sehingga tampilan yang terstruktur mempermudah pemahaman.
-    
-
-3. Mempermudah pemeliharaan kode
-    
-
-- Pengembang lain dapat dengan cepat memahami dan memodifikasi kode tanpa resiko besar.
-    
-
-5. Meningkatkan efisiensi kolaborasi
-    
-
-- Dengan mengikuti standar formatting yang sama, pengembang dapat bekerja bersama tanpa hambatan pemahaman.
-    
-
-7. Mengurangi kesalahan dalam kode
-    
-
-- Struktur yang rapi membantu dalam mendeteksi bug lebih cepat.
-    
-
-9. Mempermudah proses code review
-    
-
-- Reviewer dapat lebih fokus pada logika program dibanding mengoreksi format kode yang tidak konsisten.
-    
+5. **Mempermudah proses code review**
+    - Reviewer dapat lebih fokus pada logika program dibanding mengoreksi format kode yang tidak konsisten.
 
 ---
-
 ## Pentingnya Formatting
 
 ### 1. Readability
 
-Kode yang terformat dengan baik lebih mudah dibaca dan dipahami, sehingga pengembang dapat dengan cepat memahami alur logika program. Formatting yang baik mengurangi waktu yang dibutuhkan untuk memahami fungsi dan tujuan kode tertentu.
+Kode yang terformat dengan baik **lebih mudah dibaca dan dipahami**, sehingga pengembang dapat dengan cepat memahami alur logika program. Formatting yang baik mengurangi waktu yang dibutuhkan untuk memahami fungsi dan tujuan kode tertentu.
 
 ### 2. Maintainability
 
-Kode yang memiliki format konsisten lebih mudah dipelihara. Formatting yang buruk dapat menyebabkan kesulitan dalam mencari, memperbaiki, atau memperbarui bagian kode tertentu.
+Kode yang memiliki format konsisten **lebih mudah dipelihara**. Formatting yang buruk dapat menyebabkan kesulitan dalam mencari, memperbaiki, atau memperbarui bagian kode tertentu.
 
 ### 3. Collaboration
 
-Dalam proyek pengembangan perangkat lunak, beberapa pengembang sering bekerja pada kode yang sama. Dengan mengikuti standar formatting yang sama, setiap pengembang dapat memahami dan mengedit kode dengan lebih mudah tanpa harus menyesuaikan diri dengan format yang berbeda-beda.
+Dalam proyek pengembangan perangkat lunak, beberapa pengembang sering bekerja pada kode yang sama. Dengan mengikuti standar formatting yang sama, setiap pengembang **dapat memahami dan mengedit kode dengan lebih mudah** tanpa harus menyesuaikan diri dengan format yang berbeda-beda.
 
 ### 4. Error Reduction
 
-Kode yang tidak terstruktur dengan baik sering kali menyebabkan kesalahan yang sulit ditemukan. Dengan mengikuti formatting yang jelas, pengembang dapat lebih mudah mendeteksi kesalahan dan memperbaikinya sebelum menyebabkan bug yang lebih besar.
+Kode yang tidak terstruktur dengan baik sering kali menyebabkan kesalahan yang sulit ditemukan. Dengan mengikuti formatting yang jelas, pengembang dapat **lebih mudah mendeteksi kesalahan dan memperbaikinya sebelum menyebabkan bug yang lebih besar**.
 
 ### 5. Code Reviews
 
-Saat melakukan review kode, reviewer seharusnya fokus pada logika dan fungsionalitas, bukan pada masalah format kode yang tidak rapi. Formatting yang baik mempermudah proses review karena kode lebih mudah dianalisis dan dipahami.
+Saat melakukan review kode, reviewer seharusnya fokus pada logika dan fungsionalitas, bukan pada masalah format kode yang tidak rapi. Formatting yang baik **mempermudah proses review** karena kode lebih mudah dianalisis dan dipahami.
 
 ---
 
@@ -77,18 +57,14 @@ Saat melakukan review kode, reviewer seharusnya fokus pada logika dan fungsional
 
 Meskipun sering dianggap sama, formatting dan refactoring adalah dua hal yang berbeda:
 
-|   |   |   |
-|---|---|---|
-|Aspek|Formatting|Refactoring|
-|Definisi|Mengatur tata letak dan gaya penulisan kode agar lebih mudah dibaca tanpa mengubah fungsionalitasnya.|Mengubah struktur internal kode untuk meningkatkan kualitas tanpa mengubah fungsionalitas.|
-|Fokus|Konsistensi dalam indentasi, spasi, pemisahan baris (line breaks), dan gaya penulisan.|Meningkatkan desain kode, mengurangi duplikasi, dan meningkatkan efisiensi.|
-|Contoh|- Mengubah indentasi atau spasi.<br>    <br>- Menyesuaikan panjang baris kode.<br>    <br>- Menggunakan konvensi penamaan yang lebih baik.|- Mengganti kode berulang dengan fungsi yang dapat digunakan kembali.<br>    <br>- Memisahkan fungsi besar menjadi fungsi kecil yang lebih spesifik.<br>    <br>- Menghilangkan dependensi yang tidak perlu.|
-|Dampak|Meningkatkan keterbacaan kode tanpa mengubah cara kerja kode tersebut.|Membantu pemeliharaan jangka panjang, meningkatkan efisiensi, dan mengurangi potensi bug.|
-
-## 
+| Aspek    | Formatting                                                                                                                                 | Refactoring                                                                                                                                                                                                  |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Definisi | Mengatur tata letak dan gaya penulisan kode agar lebih mudah dibaca tanpa mengubah fungsionalitasnya.                                      | Mengubah struktur internal kode untuk meningkatkan kualitas tanpa mengubah fungsionalitas.                                                                                                                   |
+| Fokus    | Konsistensi dalam indentasi, spasi, pemisahan baris (line breaks), dan gaya penulisan.                                                     | Meningkatkan desain kode, mengurangi duplikasi, dan meningkatkan efisiensi.                                                                                                                                  |
+| Contoh   | - Mengubah indentasi atau spasi.<br>    <br>- Menyesuaikan panjang baris kode.<br>    <br>- Menggunakan konvensi penamaan yang lebih baik. | - Mengganti kode berulang dengan fungsi yang dapat digunakan kembali.<br>    <br>- Memisahkan fungsi besar menjadi fungsi kecil yang lebih spesifik.<br>    <br>- Menghilangkan dependensi yang tidak perlu. |
+| Dampak   | Meningkatkan keterbacaan kode tanpa mengubah cara kerja kode tersebut.                                                                     | Membantu pemeliharaan jangka panjang, meningkatkan efisiensi, dan mengurangi potensi bug.                                                                                                                    |
 
 ---
-
 ## Formatting dalam OutSystems
 
 Dalam lingkungan pengembangan OutSystems, formatting memainkan peran penting dalam meningkatkan keterbacaan dan pemeliharaan aplikasi. Berdasarkan hasil survei kebiasaan pengembang di lingkungan PPU, berikut adalah beberapa aspek formatting yang umum diterapkan:
@@ -97,14 +73,13 @@ Dalam lingkungan pengembangan OutSystems, formatting memainkan peran penting dal
 
 Kode yang disusun secara horizontal dan vertikal dengan rapi akan lebih mudah dibaca dan dipahami. Alignment sering digunakan dalam:
 
-- Assignment (pemberian nilai ke variabel).
+- **Assignment** (pemberian nilai ke variabel).
     
-- Conditional statements (struktur logika IF/ELSE).
+- **Conditional statements** (struktur logika IF/ELSE).
     
-- Node dalam OutSystems untuk memastikan aliran logika terlihat jelas.
+- **Node dalam OutSystems** untuk memastikan aliran logika terlihat jelas.
     
-
-### Contoh Formatting Alignment
+#### Contoh Formatting Alignment
 
 Alignment dalam flowchart memastikan keterbacaan yang lebih baik. Berikut dua jenis alignment yang umum diterapkan:
 
