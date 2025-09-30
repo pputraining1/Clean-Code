@@ -97,11 +97,11 @@ Mengacu pada Alignment Chart, penulis Clean Code yaitu Robert C. Martin, mengkla
 
 - **Lawful**: Komentar memiliki struktur, aturan, dan mengikuti pedoman penulisan yang baik.  
 - **Evil**: Komentar dapat:
-		1. Menyembunyikan bad code
-		2. Kadaluarsa dan menyesatkan
-		3. Membuat pemahaman yang salah
-		4. Membutuhkan maintenance ekstra
-		5. Bertentangan dengan implementasi sebenarnya
+	1. Menyembunyikan bad code	
+	2. Kadaluarsa dan menyesatkan
+	3. Membuat pemahaman yang salah
+	4. Membutuhkan maintenance ekstra
+	5. Bertentangan dengan implementasi sebenarnya
     
 Hal ini berarti komentar mungkin terlihat sah secara struktur (lawful), tetapi sebenarnya bisa merugikan dalam jangka panjang (evil), terutama jika digunakan untuk membenarkan kode yang buruk alih-alih memperbaikinya
 
