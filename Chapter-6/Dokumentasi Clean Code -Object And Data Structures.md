@@ -333,7 +333,6 @@ Membuat Logic Geometry
 2. Jika menambahkan data baru, misal Circle, maka semua Logic akan berubah (hard to add new data).
     
 
-  
 
 Contoh Implementasi Data-First
 
