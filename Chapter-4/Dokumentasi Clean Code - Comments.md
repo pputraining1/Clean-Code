@@ -11,15 +11,15 @@ Cara kita memandang komentar sangat menentukan bagaimana kita menggunakannya dal
 
 ## Bagaimana seharusnya memandang komentar?
 
-- Komentar tidak bisa memperbaiki bad code (kode yang buruk). Menambahkan komentar pada kode yang berantakan hanya menutupi masalah, bukan memperbaikinya. Solusi sebenarnya adalah membuat kode yang baik.
+- **Komentar tidak bisa memperbaiki bad code (kode yang buruk).** Menambahkan komentar pada kode yang berantakan hanya menutupi masalah, bukan memperbaikinya. Solusi sebenarnya adalah membuat kode yang baik.
     
-- Komentar adalah pilihan terakhir. Fokus utama menulis kode yang bersih dan rapi (Clean Code), bukan menjelaskan sebuah bad code melalui komentar. Komentar hanya digunakan jika tidak ada cara lain yang lebih baik untuk menjelaskan maksudnya.
+- **Komentar adalah pilihan terakhir.** Fokus utama menulis kode yang bersih dan rapi (Clean Code), bukan menjelaskan sebuah bad code melalui komentar. Komentar hanya digunakan jika tidak ada cara lain yang lebih baik untuk menjelaskan maksudnya.
     
-- Setiap komentar yang ditulis adalah kegagalan dalam berekspresi. Jika kita harus menjelaskan maksud kode dengan komentar, berarti kita gagal menyampaikan maksud itu langsung melalui struktur dan penamaan kode.
+- **Setiap komentar yang ditulis adalah kegagalan dalam berekspresi.** Jika kita harus menjelaskan maksud kode dengan komentar, berarti kita gagal menyampaikan maksud itu langsung melalui struktur dan penamaan kode.
     
-- Komentar dapat berbohong dan tidak terawat. Komentar yang awalnya benar bisa menjadi menyesatkan jika kode berubah, tetapi komentarnya tidak diperbarui. Ini membuat komentar bertentangan dengan kenyataan kode, sehingga justru membingungkan dan membahayakan pemahaman developer lain.
+- **Komentar dapat berbohong dan tidak terawat.** Komentar yang awalnya benar bisa menjadi menyesatkan jika kode berubah, tetapi komentarnya tidak diperbarui. Ini membuat komentar bertentangan dengan kenyataan kode, sehingga justru membingungkan dan membahayakan pemahaman developer lain.
     
-- Clean code adalah kode yang bisa menjelaskan dirinya sendiri tanpa membutuhkan komentar tambahan. Kode yang baik menggunakan nama fungsi, variabel, dan struktur logika yang jelas, sehingga pembaca bisa memahami maksudnya tanpa bantuan komentar.
+- **Clean code adalah kode yang bisa menjelaskan dirinya sendiri tanpa membutuhkan komentar tambahan**. Kode yang baik menggunakan nama fungsi, variabel, dan struktur logika yang jelas, sehingga pembaca bisa memahami maksudnya tanpa bantuan komentar.
     
 
 ---
@@ -66,46 +66,41 @@ Komentar dapat ditulis menggunakan -- untuk satu baris atau `/*  */` untuk beber
 ---
 ## Comments Classification
 
-Dalam pengembangan sistem aplikasi modern, terutama pada lingkungan high-code seperti Visual Studio Code, ekstensi seperti “Better Comments” digunakan untuk mengklasifikasikan komentar berdasarkan warna. Dengan pengelompokan ini, komentar menjadi lebih mudah dibaca dan dipahami karena ditandai secara visual sesuai dengan jenis informasinya.
+Dalam pengembangan sistem aplikasi modern, terutama pada lingkungan high-code seperti Visual Studio Code, ekstensi seperti **“Better Comments”** digunakan untuk mengklasifikasikan komentar berdasarkan warna. Dengan pengelompokan ini, komentar menjadi lebih mudah dibaca dan dipahami karena ditandai secara visual sesuai dengan jenis informasinya.
 
 ![test](img/Picture7.png)
 
 Tipe-tipe komentar pada klasifikasi “**Better Comments**”:
 
-- Title (Hijau Gelap):Menandai bagian utama atau blok penting kode.
+- **Title (Hijau Gelap)**: Menandai bagian utama atau blok penting kode.
     
-- Information (Hijau Tebal): Memberikan penjelasan tambahan tentang logika atau konteks tertentu.
+- **Information (Hijau Tebal)**: Memberikan penjelasan tambahan tentang logika atau konteks tertentu.
     
-- Deprecation (Merah): Menunjukkan bahwa bagian kode tidak lagi disarankan untuk digunakan.
+- **Deprecation (Merah)**: Menunjukkan bahwa bagian kode tidak lagi disarankan untuk digunakan.
     
-- Question (Biru): Menandai keraguan atau pertanyaan terhadap suatu bagian logika.
+- **Question (Biru)**: Menandai keraguan atau pertanyaan terhadap suatu bagian logika.
     
-- TODO (Jingga): Bagian yang perlu diselesaikan atau diperbaiki di masa depan.
+- **TODO (Jingga)**: Bagian yang perlu diselesaikan atau diperbaiki di masa depan.
     
-- Parameters (Hijau Gelap dengan highlight biru untuk nama parameter): Memberikan penjelasan tentang argumen atau parameter fungsi.
+- **Parameters (Hijau Gelap dengan highlight biru untuk nama parameter)**: Memberikan penjelasan tentang argumen atau parameter fungsi.
     
 
-> Catatan: Beberapa kode yang ditandai deprecated tetap dipertahankan untuk keperluan backward compatibility.
+> **Catatan:** Beberapa kode yang ditandai deprecated tetap dipertahankan untuk keperluan backward compatibility.
 
 ---
 ## Comments on Alignment Chart
 
-Mengacu pada Alignment Chart, penulis Clean Code yaitu Robert C. Martin, mengklasifikasikan komentar sebagai bagian dari spektrum moral yang dikenal dengan istilah “Lawful Evil”.
+Mengacu pada Alignment Chart, penulis Clean Code yaitu Robert C. Martin, mengklasifikasikan komentar sebagai bagian dari spektrum moral yang dikenal dengan istilah **“Lawful Evil”**.
 
 ![test](img/Picture8.png)
 
 - **Lawful**: Komentar memiliki struktur, aturan, dan mengikuti pedoman penulisan yang baik.  
 - **Evil**: Komentar dapat:
-    
-1. Menyembunyikan bad code
-    
-2. Kadaluarsa dan menyesatkan
-    
-3. Membuat pemahaman yang salah
-    
-4. Membutuhkan maintenance ekstra
-    
-5. Bertentangan dengan implementasi sebenarnya
+	1. Menyembunyikan bad code
+	2. Kadaluarsa dan menyesatkan
+    3. Membuat pemahaman yang salah
+    4. Membutuhkan maintenance ekstra
+    5. Bertentangan dengan implementasi sebenarnya
     
 Hal ini berarti komentar mungkin terlihat sah secara struktur (lawful), tetapi sebenarnya bisa merugikan dalam jangka panjang (evil), terutama jika digunakan untuk membenarkan kode yang buruk alih-alih memperbaikinya
 
@@ -116,13 +111,13 @@ Dalam prinsip Clean Code, komentar sebenarnya bukan hal yang ideal, mereka adala
 
 ## Good Comments = Kosong
 
-Perlu menjadi catatan penting bahwa, komentar terbaik adalah tidak adanya komentar. Jika kode ditulis dengan rapi, memiliki nama variabel yang deskriptif, fungsi yang terstruktur, dan alur logika yang jelas, maka kebutuhan akan komentar akan hilang. Tidak menulis komentar adalah tanda bahwa kode sudah cukup “berbicara sendiri” tanpa bantuan penjelasan tambahan.
+Perlu menjadi catatan penting bahwa, **komentar terbaik adalah tidak adanya komentar**. Jika kode ditulis dengan rapi, memiliki nama variabel yang deskriptif, fungsi yang terstruktur, dan alur logika yang jelas, maka kebutuhan akan komentar akan hilang. Tidak menulis komentar adalah tanda bahwa kode sudah cukup “berbicara sendiri” tanpa bantuan penjelasan tambahan.
 
 ## Good Comments are Written As LICET
 
 Dalam kondisi tertentu komentar tetap bisa ditoleransi. Untuk memudahkan dalam menghafalkan prinsip Good Comments maka dibuat dengan akronim “***Good Comments are Written As LICET***”. Licet sendiri dalam bahasa latin artinya boleh-boleh saja. 
 
-**“Good Comments are Written As LICET”**, yaitu:
+“Good Comments are **W**ritten **A**s **LICET**”, yaitu:
 
 - **W – Warning of Consequences**, memberi peringatan konsekuensi dari aksi.
     ![test](img/Picture9.png)
@@ -151,7 +146,7 @@ Dalam kondisi tertentu komentar tetap bisa ditoleransi. Untuk memudahkan dalam m
 ---
 # Bad Comments
 
-Komentar yang buruk tidak hanya tidak berguna, tapi juga dapat memperparah kebingungan dan mengurangi kualitas kode. Tipe komentar ini dikategorikan sebagai Three-Un: Unclear, Unnecessary, dan Unhelpful.
+Komentar yang buruk tidak hanya tidak berguna, tapi juga dapat memperparah kebingungan dan mengurangi kualitas kode. Tipe komentar ini dikategorikan sebagai **Three-Un: Unclear, Unnecessary, dan Unhelpful**.
 
 ## 1. Unclear
 
