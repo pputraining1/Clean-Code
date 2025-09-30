@@ -217,7 +217,7 @@ Komentar yang panjang, melebar, atau tidak relevan:
 
 ---
 
-## Kesimpulan
+# Kesimpulan
 
 Dalam prinsip Clean Code, komentar sebaiknya menjadi pilihan terakhir, bukan alat utama untuk menjelaskan kode. Kode yang baik harus bisa “berbicara sendiri” melalui penamaan dan struktur yang jelas. Komentar yang tidak tepat bisa menyesatkan, menambah beban pemeliharaan, dan menyembunyikan kode buruk. Namun, komentar tetap diperbolehkan dalam kondisi tertentu seperti penjelasan intent, peringatan, informasi hukum, atau TODO. Komentar buruk biasanya bersifat tidak jelas, tidak perlu, atau tidak membantu. Maka, tulislah komentar hanya jika benar-benar dibutuhkan dan tidak ada cara lain untuk memperjelas maksud kode.
 
