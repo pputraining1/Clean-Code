@@ -257,7 +257,7 @@ Ini menggambarkan paradoks dan tantangan dalam memisahkan serta menangani **data
 
 **Kelemahan**: Sulit menambah data baru karena akan berdampak ke banyak bagian logika. Ini adalah kekurangan pendekatan Data First ketika sistem butuh mendukung banyak jenis entitas baru.
 
-## Data First di dalam High Code
+### Data First di dalam High Code
 
 ![test](img/Picture15.png)
 - Class **Rectangle** dan **Triangle** merupakan Data
@@ -270,7 +270,7 @@ Ini menggambarkan paradoks dan tantangan dalam memisahkan serta menangani **data
 
 - Sebaliknya jika kita menambah data baru, misalkan shape clas Circle, maka class Geometry harus melakukan perubahan juga (Hard to add new data).
 
-## Data First di dalam Outsystems
+### Data First di dalam Outsystems
 
 Membuat Data Terlebih Dahulu
 
@@ -317,7 +317,7 @@ Gambar ini menggambarkan pendekatan **Logic-First**, yang berkebalikan dari **Da
 
 **Kelemahan**: Menambah logika baru akan sulit, karena semua class harus diubah untuk mendukung logika tersebut. Hal ini membuat sistem tidak fleksibel terhadap penambahan fitur baru.
 
-## Logic-First di dalam High Code
+### Logic-First di dalam High Code
 
 ![test](img/Picture20.png)
 - Class **Shape** merupakan Logic abstrak 
@@ -328,7 +328,7 @@ Gambar ini menggambarkan pendekatan **Logic-First**, yang berkebalikan dari **Da
 
 - Sebaliknya, jika class abstrak dari **Shape** akan menambahkan Logic baru, misalkan fungsi menghitung **circumference**.  Maka seluruh data turunannya yang mengimplementasikan Logic class Shape, harus ikut berubah. (Hard to add new logic)
 
-## Logic-First didalam Outsystems
+### Logic-First didalam Outsystems
 
 **Mendefinisikan Data Terlebih Dahulu**
 ![test](img/Picture21.png)
