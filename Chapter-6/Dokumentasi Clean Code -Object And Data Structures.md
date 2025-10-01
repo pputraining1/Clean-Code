@@ -385,7 +385,7 @@ Pada OutSystems, konsep ini diterapkan untuk meningkatkan modularisasi agar tida
 - **Kesalahan Umum**:
 	Di dalam Modul UI, kita langsung mengambil data dari entitas CoffeeMachine tanpa melalui Modul Bisnis.
 
-**Bad Practice (Langsung Akses Data dari Modul Lain)**:
+**🔴Bad Practice (Langsung Akses Data dari Modul Lain)**:
 
 ![test](img/Picture25.png)
 
