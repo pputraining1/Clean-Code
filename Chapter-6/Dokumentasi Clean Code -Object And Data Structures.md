@@ -386,7 +386,9 @@ Pada OutSystems, konsep ini diterapkan untuk meningkatkan modularisasi agar tida
 	Di dalam Modul UI, kita langsung mengambil data dari entitas CoffeeMachine tanpa melalui Modul Bisnis.
 
 **Bad Practice (Langsung Akses Data dari Modul Lain)**:
+
 ![test](img/Picture25.png)
+
 
 **Dampaknya**:
 
@@ -400,6 +402,7 @@ Pada OutSystems, konsep ini diterapkan untuk meningkatkan modularisasi agar tida
 	Kita harus membuat Server Action di Modul Bisnis (misal. CoffeeLogic) agar UI hanya memanggil Action ini.  
   
 🟢 **Good Practice (Dengan LoD)**
+
 ![test](img/Picture26.png)
 Dengan demikian:
 
