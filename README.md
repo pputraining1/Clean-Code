@@ -45,3 +45,25 @@ Berikut adalah 6 bab yang saya rangkum dan dokumentasikan di repositori ini, bes
 ### Struktur Repositori
 
 Setiap bab didokumentasikan dalam direktori terpisah dengan format yang konsisten:
+
+```
+.
+├── Chapter-1
+│   ├── img
+│   └── Dokumentasi Clean Code - Fun...
+├── Chapter-2
+│   ├── img
+│   └── Dokumentasi Clean Code - Mea...
+├── Chapter-3
+│   ├── img
+│   └── Dokumentasi Clean Code - Func...
+├── Chapter-4
+│   ├── img
+│   └── Dokumentasi Clean Code - Com...
+├── Chapter-5
+│   ├── img
+│   └── Dokumentasi Clean Code - For...
+└── Chapter-6
+    ├── img
+    └── Dokumentasi Clean Code - Obje...
+```
